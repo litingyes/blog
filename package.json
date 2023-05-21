@@ -5,9 +5,13 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "format": "eslint --fix ."
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^0.39.1",
+    "@nuxtjs/eslint-module": "^4.1.0",
     "nuxt": "^3.2.3"
   }
 }
