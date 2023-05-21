@@ -17,12 +17,14 @@
     "@commitlint/config-conventional": "^17.6.3",
     "@commitlint/cz-commitlint": "^17.5.0",
     "@nuxtjs/eslint-module": "^4.1.0",
+    "@nuxtjs/stylelint-module": "^5.1.0",
     "commitizen": "^4.3.0",
     "eslint": "^8.41.0",
     "inquirer": "8",
     "lint-staged": "^13.2.2",
     "nuxt": "^3.2.3",
-    "simple-git-hooks": "^2.8.1"
+    "simple-git-hooks": "^2.8.1",
+    "stylelint": "^15.6.2"
   },
   "config": {
     "commitizen": {
