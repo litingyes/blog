@@ -24,7 +24,8 @@
     "lint-staged": "^13.2.2",
     "nuxt": "^3.2.3",
     "simple-git-hooks": "^2.8.1",
-    "stylelint": "^15.6.2"
+    "stylelint": "^15.6.2",
+    "stylelint-config-recommended-vue": "^1.4.0"
   },
   "config": {
     "commitizen": {

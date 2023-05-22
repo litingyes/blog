@@ -6,3 +6,4 @@
 .env
 dist
 .DS_Store
+.stylelintcache
