@@ -7,4 +7,7 @@ export default defineNuxtConfig({
         '@nuxt/image-edge',
         '@nuxthq/ui',
     ],
+    css: [
+        '@unocss/reset/tailwind-compat.css',
+    ],
 })

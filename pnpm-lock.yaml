@@ -31,6 +31,9 @@ devDependencies:
   '@unocss/nuxt':
     specifier: ^0.52.1
     version: 0.52.1(postcss@8.4.23)(vite@4.1.4)(webpack@5.83.1)
+  '@unocss/reset':
+    specifier: ^0.52.1
+    version: 0.52.1
   commitizen:
     specifier: ^4.3.0
     version: 4.3.0
