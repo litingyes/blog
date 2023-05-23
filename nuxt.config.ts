@@ -5,5 +5,6 @@ export default defineNuxtConfig({
         '@nuxtjs/eslint-module',
         '@unocss/nuxt',
         '@nuxt/image-edge',
+        '@nuxthq/ui',
     ],
 })
