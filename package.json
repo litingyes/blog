@@ -18,6 +18,8 @@
     "@commitlint/cz-commitlint": "^17.5.0",
     "@nuxtjs/eslint-module": "^4.1.0",
     "@nuxtjs/stylelint-module": "^5.1.0",
+    "@unocss/eslint-config": "^0.52.1",
+    "@unocss/nuxt": "^0.52.1",
     "commitizen": "^4.3.0",
     "eslint": "^8.41.0",
     "inquirer": "8",
