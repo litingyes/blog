@@ -16,6 +16,7 @@
     "@commitlint/cli": "^17.6.3",
     "@commitlint/config-conventional": "^17.6.3",
     "@commitlint/cz-commitlint": "^17.5.0",
+    "@nuxt/image-edge": "1.0.0-28059208.2abef1b",
     "@nuxtjs/eslint-module": "^4.1.0",
     "@nuxtjs/stylelint-module": "^5.1.0",
     "@unocss/eslint-config": "^0.52.1",
