@@ -14,7 +14,7 @@ export default defineNuxtConfig({
     },
     css: [
         '@unocss/reset/tailwind-compat.css',
-        '@/assets/root.scss',
+        '@/assets/styles/root.scss',
     ],
     stylelint: {},
 })
