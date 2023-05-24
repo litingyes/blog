@@ -7,6 +7,7 @@ export default defineNuxtConfig({
         '@nuxtjs/color-mode',
         '@nuxtjs/stylelint-module',
         '@nuxtjs/fontaine',
+        '@nuxt/image-edge',
     ],
     colorMode: {
         preference: 'system',
@@ -18,4 +19,11 @@ export default defineNuxtConfig({
         '@/assets/styles/root.scss',
     ],
     stylelint: {},
+    image: {
+        screens: {
+            sm: 676,
+            md: 960,
+            lg: 1440,
+        },
+    },
 })
