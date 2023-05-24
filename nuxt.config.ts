@@ -6,6 +6,7 @@ export default defineNuxtConfig({
         '@nuxthq/ui',
         '@nuxtjs/color-mode',
         '@nuxtjs/stylelint-module',
+        '@nuxtjs/fontaine',
     ],
     colorMode: {
         preference: 'system',

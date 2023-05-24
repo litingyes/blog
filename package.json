@@ -11,6 +11,9 @@
     "commit": "git add . && git-cz",
     "prepare": "npx simple-git-hooks"
   },
+  "dependencies": {
+    "@nuxtjs/fontaine": "^0.2.5"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^0.39.1",
     "@commitlint/cli": "^17.6.3",
