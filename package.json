@@ -6,8 +6,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lint": "eslint .",
-    "format": "eslint --fix .",
+    "lint": "eslint . && stylelint \"**/*.{css,scss}\"",
+    "format": "eslint --fix . && stylelint --fix \"**/*.{css,scss}\"",
     "commit": "git add . && git-cz",
     "prepare": "npx simple-git-hooks"
   },
@@ -16,8 +16,10 @@
     "@commitlint/cli": "^17.6.3",
     "@commitlint/config-conventional": "^17.6.3",
     "@commitlint/cz-commitlint": "^17.5.0",
+    "@iconify/json": "^2.2.68",
     "@nuxt/image-edge": "1.0.0-28059208.2abef1b",
     "@nuxthq/ui": "^2.1.0",
+    "@nuxtjs/color-mode": "^3.2.0",
     "@nuxtjs/eslint-module": "^4.1.0",
     "@nuxtjs/stylelint-module": "^5.1.0",
     "@unocss/eslint-config": "^0.52.1",
@@ -28,9 +30,12 @@
     "inquirer": "8",
     "lint-staged": "^13.2.2",
     "nuxt": "^3.2.3",
+    "sass": "^1.62.1",
     "simple-git-hooks": "^2.8.1",
     "stylelint": "^15.6.2",
-    "stylelint-config-recommended-vue": "^1.4.0"
+    "stylelint-config-recommended-scss": "^12.0.0",
+    "stylelint-config-recommended-vue": "^1.4.0",
+    "typescript": "^5.0.4"
   },
   "config": {
     "commitizen": {
@@ -42,7 +47,8 @@
     "commit-msg": "npx commitlint  --edit ''"
   },
   "lint-staged": {
-    "*": "eslint --fix"
+    "*.{ts,vue,json}": "eslint --fix --quiet",
+    "*.{css,scss}": "stylelint --fix --quiet"
   },
   "commitlint": {
     "extends": [

@@ -1,6 +1,14 @@
 {
-    "extends":[ "@antfu", "@unocss"],
+    "extends":["@antfu", "@unocss"],
     "rules": {
         "@typescript-eslint/indent": 0
-    }
+    },
+    "overrides": [
+        {
+            "files": "package.json",
+            "rules": {
+                "eol-last": [2, "never"]
+            }
+        }
+    ]
 }

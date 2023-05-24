@@ -6,4 +6,5 @@
 .env
 dist
 .DS_Store
+pnpm-lock.yaml
 .stylelintcache
