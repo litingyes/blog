@@ -26,8 +26,6 @@
     "@unocss/eslint-config": "^0.52.3",
     "@unocss/nuxt": "^0.52.3",
     "@unocss/reset": "^0.52.3",
-    "@unocss/transformer-directives": "^0.52.3",
-    "@unocss/transformer-variant-group": "^0.52.3",
     "@vueuse/core": "^10.1.2",
     "@vueuse/nuxt": "^10.1.2",
     "animate.css": "^4.1.1",
