@@ -11,8 +11,8 @@ export default defineNuxtConfig({
         '@vueuse/nuxt',
     ],
     colorMode: {
-        preference: 'system',
-        fallback: 'light',
+        preference: 'dark',
+        fallback: 'dark',
         storageKey: 'liting-blog-color-mode',
     },
     css: [

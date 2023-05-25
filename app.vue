@@ -46,10 +46,12 @@ function switchTheme(e: MouseEvent) {
   <div class="default-layout w-screen h-screen bg-slate-50 dark:bg-slate-800">
     <nav class="flex items-center h-16 border-solid border-gray-1 justify-end px-8 border-b-2 dark:border-slate-700">
       <div ref="themeIconRef" class="w-9 h-9 flex-col hover:bg-slate-200 rounded-lg flex justify-center items-center cursor-pointer dark:hover:bg-slate-600" @click="switchTheme">
-        <TransitionGroup name="list">
-          <span v-show="displayLightIcon" key="light" class="text-2xl i-ic:outline-light-mode" />
-          <span v-show="!displayLightIcon" key="dark" class="text-2xl i-ic:outline-dark-mode" />
-        </TransitionGroup>
+        <Transition name="list">
+          <span v-show="displayLightIcon" class="text-2xl i-ic:outline-light-mode" />
+        </Transition>
+        <Transition name="list">
+          <span v-show="!displayLightIcon" class="text-2xl i-ic:outline-dark-mode" />
+        </Transition>
       </div>
     </nav>
     <main class="default-layout__main">
