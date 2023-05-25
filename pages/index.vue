@@ -9,27 +9,27 @@
         <div class="text-center font-semibold text-xl">
           文侯
         </div>
-        <ul class="!list-none flex justify-center !p-0 !m-0 gap-4 h-8">
-          <li class="w-4 p-0 m-0">
-            <NuxtLink to="https://github.com/liting-yes" target="__black">
+        <ul class="flex justify-center !list-none !p-0 !m-0 gap-4 h-8">
+          <NuxtLink to="https://github.com/liting-yes" target="__black">
+            <li class="w-8 rounded-lg flex justify-center items-center cursor-pointer hover:bg-slate-300 p-0 h-8 m-0 dark:hover:bg-slate-600">
               <span class="i-line-md:github-loop" />
-            </NuxtLink>
-          </li>
-          <li class="w-4 p-0 m-0">
-            <NuxtLink to="https://juejin.cn/user/2217072231984919" target="__black">
+            </li>
+          </NuxtLink>
+          <NuxtLink to="https://juejin.cn/user/2217072231984919" target="__black">
+            <li class="w-8 h-8 p-0 m-0 dark:hover:bg-slate-600 hover:bg-slate-300 rounded-lg flex justify-center items-center cursor-pointer">
               <span class="i-tabler:brand-juejin" />
-            </NuxtLink>
-          </li>
-          <li class="w-4 p-0 m-0">
-            <NuxtLink to="https://space.bilibili.com/472116791" target="__black">
+            </li>
+          </NuxtLink>
+          <NuxtLink to="https://space.bilibili.com/472116791" target="__black">
+            <li class="w-8 h-8 p-0 m-0 dark:hover:bg-slate-600 hover:bg-slate-300 rounded-lg flex justify-center items-center cursor-pointer">
               <span class="i-custom:blibli" />
-            </NuxtLink>
-          </li>
-          <li class="w-4 p-0 m-0">
-            <NuxtLink to="https://twitter.com/liting_yes" target="__black">
+            </li>
+          </NuxtLink>
+          <NuxtLink to="https://twitter.com/liting_yes" target="__black">
+            <li class="w-8 h-8 p-0 m-0 dark:hover:bg-slate-600 hover:bg-slate-300 rounded-lg flex justify-center items-center cursor-pointer">
               <span class="i-ri:twitter-line" />
-            </NuxtLink>
-          </li>
+            </li>
+          </NuxtLink>
         </ul>
         <p>
           中国湖南邵阳人，毕业于山东大学（2019级本科）

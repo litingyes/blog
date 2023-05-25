@@ -1,4 +1,6 @@
 import { defineConfig, presetAttributify, presetIcons, presetTypography } from 'unocss'
+import transformerDirectives from '@unocss/transformer-directives'
+import transformerVariantGroup from '@unocss/transformer-variant-group'
 
 export default defineConfig({
   presets: [
@@ -34,4 +36,11 @@ export default defineConfig({
       lg: 1440,
     },
   },
+  // shortcuts: {
+  //   // 'btn-container': 'dark:hover:bg-slate-700 hover:bg-slate-200 rounded-lg flex justify-center items-center cursor-pointer',
+  // },
+  transformers: [
+    transformerDirectives(),
+    transformerVariantGroup(),
+  ],
 })
