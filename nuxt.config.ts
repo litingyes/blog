@@ -8,6 +8,8 @@ export default defineNuxtConfig({
         '@nuxtjs/stylelint-module',
         '@nuxtjs/fontaine',
         '@nuxt/image-edge',
+        'nuxt-purgecss',
+        '@vueuse/nuxt',
     ],
     colorMode: {
         preference: 'system',
@@ -16,6 +18,7 @@ export default defineNuxtConfig({
     },
     css: [
         '@unocss/reset/tailwind-compat.css',
+        'animate.css',
         '@/assets/styles/root.scss',
     ],
     stylelint: {},
@@ -25,5 +28,8 @@ export default defineNuxtConfig({
             md: 960,
             lg: 1440,
         },
+    },
+    purgecss: {
+        keyframes: true,
     },
 })
