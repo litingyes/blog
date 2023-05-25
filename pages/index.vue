@@ -4,12 +4,12 @@
 <template>
   <div class="flex items-center justify-center h-full">
     <div class="flex justify-center overflow-hidden bg-slate-200 hover:scale-[1.01] transition-transform drop-shadow-lg dark:bg-slate-700 rounded-xl">
-      <NuxtImg src="/images/homePersonal.jpg" sizes="sm:208 md:288 lg:384" />
-      <div class="lg:w-96 lg:p-8 md:p-6 sm:w-56 sm:p-4 md:w-72 prose">
+      <NuxtImg src="/images/homePersonal.jpg" sizes="sm:256 md:288 lg:384" />
+      <div class="lg:w-96 lg:p-8 md:p-6 sm:p-4 md:w-72 sm:w-64 prose">
         <div class="text-center font-semibold text-xl">
           文侯
         </div>
-        <ul class="flex justify-center !list-none !p-0 !m-0 gap-4 h-8">
+        <ul class="flex justify-center !list-none !p-0 gap-4 h-8">
           <NuxtLink to="https://github.com/liting-yes" target="__black">
             <li class="w-8 rounded-lg flex justify-center items-center cursor-pointer hover:bg-slate-300 p-0 h-8 m-0 dark:hover:bg-slate-600">
               <span class="i-line-md:github-loop" />
