@@ -4,7 +4,7 @@
 <template>
   <div class="flex items-center justify-center h-full">
     <div class="flex justify-center overflow-hidden bg-slate-200 hover:scale-[1.01] transition-transform drop-shadow-lg dark:bg-slate-700 rounded-xl">
-      <NuxtImg src="/images/homePersonal.jpg" sizes="sm:256 md:288 lg:384" />
+      <NuxtImg class="sm:w-64 md:w-72 lg:w-96" src="/images/homePersonal.jpg" sizes="sm:256 md:288 lg:384" />
       <div class="lg:w-96 lg:p-8 md:p-6 sm:p-4 md:w-72 sm:w-64 prose">
         <div class="text-center font-semibold text-xl">
           文侯
