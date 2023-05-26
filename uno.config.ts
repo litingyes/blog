@@ -1,4 +1,4 @@
-import { defineConfig, presetAttributify, presetIcons, presetTypography, transformerDirectives, transformerVariantGroup } from 'unocss'
+import { defineConfig, presetAttributify, presetIcons, presetTypography, presetUno, transformerDirectives, transformerVariantGroup } from 'unocss'
 
 export default defineConfig({
   presets: [
@@ -26,20 +26,20 @@ export default defineConfig({
         },
       },
     }),
+    presetUno(),
   ],
   theme: {
     breakpoints: {
-      sm: 676,
-      md: 960,
-      lg: 1440,
+      sm: '480px',
+      md: '960px',
+      lg: '1440px',
     },
   },
-  // shortcuts: {
-  //   // 'btn-container': 'dark:hover:bg-slate-700 hover:bg-slate-200 rounded-lg flex justify-center items-center cursor-pointer',
-  // },
+  shortcuts: {
+    'btn-container': 'dark:hover:bg-slate-700 hover:bg-slate-200 rounded-lg flex justify-center items-center cursor-pointer',
+  },
   transformers: [
     transformerDirectives(),
     transformerVariantGroup(),
   ],
-
 })
