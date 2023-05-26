@@ -34,6 +34,7 @@
     "inquirer": "^8.2.5",
     "lint-staged": "^13.2.2",
     "nuxt": "^3.5.1",
+    "renovate": "^35.102.3",
     "sass": "^1.62.1",
     "simple-git-hooks": "^2.8.1",
     "stylelint": "^15.6.2",
