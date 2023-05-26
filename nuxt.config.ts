@@ -9,6 +9,7 @@ export default defineNuxtConfig({
         '@nuxtjs/fontaine',
         '@nuxt/image-edge',
         '@vueuse/nuxt',
+        '@vite-pwa/nuxt',
     ],
     colorMode: {
         preference: 'dark',
@@ -25,6 +26,20 @@ export default defineNuxtConfig({
             sm: 676,
             md: 960,
             lg: 1440,
+        },
+    },
+    pwa: {
+        registerType: 'autoUpdate',
+        manifest: {
+            name: '文侯的博客',
+            short_name: '博客',
+        },
+        client: {
+            installPrompt: true,
+        },
+        devOptions: {
+            enabled: true,
+            type: 'module',
         },
     },
 })
