@@ -55,6 +55,7 @@ function switchTheme(e: MouseEvent) {
       </div>
     </nav>
     <main class="nuxt-app__main overflow-y-auto">
+      <NuxtLoadingIndicator />
       <NuxtPage />
     </main>
   </div>
