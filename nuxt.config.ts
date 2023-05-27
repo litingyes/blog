@@ -1,3 +1,5 @@
+import { resolve } from 'node:path'
+
 export default defineNuxtConfig({
     modules: [
         '@nuxtjs/eslint-module',
@@ -10,6 +12,7 @@ export default defineNuxtConfig({
         '@nuxt/image-edge',
         '@vueuse/nuxt',
         '@vite-pwa/nuxt',
+        '@nuxt/content',
     ],
     colorMode: {
         preference: 'dark',
@@ -40,6 +43,18 @@ export default defineNuxtConfig({
         devOptions: {
             enabled: true,
             type: 'module',
+        },
+    },
+    content: {
+        documentDriven: {
+            layoutFallbacks: ['article'],
+        },
+        sources: {
+            content: {
+                driver: 'fs',
+                prefix: '/article',
+                base: resolve(__dirname, 'content'),
+            },
         },
     },
 })
