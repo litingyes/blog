@@ -46,9 +46,7 @@ export default defineNuxtConfig({
         },
     },
     content: {
-        documentDriven: {
-            layoutFallbacks: ['article'],
-        },
+        documentDriven: true,
         sources: {
             content: {
                 driver: 'fs',
