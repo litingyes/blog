@@ -53,7 +53,7 @@ export default defineNuxtConfig({
             content: {
                 driver: 'fs',
                 prefix: '/article',
-                base: resolve(__dirname, 'content'),
+                base: resolve(__dirname, 'articles'),
             },
         },
     },
