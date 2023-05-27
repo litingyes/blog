@@ -43,7 +43,7 @@ function switchTheme(e: MouseEvent) {
 </script>
 
 <template>
-  <div class="default-layout h-screen w-screen bg-slate-50 dark:bg-slate-800">
+  <div class="nuxt-app h-screen w-screen bg-slate-50 dark:bg-slate-800">
     <nav class="h-16 flex items-center justify-end border-b-2 border-gray-1 border-solid px-8 dark:border-slate-700">
       <div ref="themeIconRef" class="h-9 w-9 flex-col btn-container" @click="switchTheme">
         <Transition name="list">
@@ -54,14 +54,14 @@ function switchTheme(e: MouseEvent) {
         </Transition>
       </div>
     </nav>
-    <main class="default-layout__main overflow-y-auto">
+    <main class="nuxt-app__main overflow-y-auto">
       <NuxtPage />
     </main>
   </div>
 </template>
 
 <style lang="scss" scoped>
-.default-layout {
+.nuxt-app {
   .list-enter-active,
   .list-leave-active {
     transition: all 0.3s ease;
