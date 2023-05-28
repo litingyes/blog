@@ -57,6 +57,7 @@ function switchTheme(e: MouseEvent) {
     <main class="nuxt-app__main overflow-y-auto" scrollbar="~ rounded track-color-slate-200 dark:track-color-slate-700 thumb-color-slate-300 dark:thumb-color-slate-600">
       <NuxtLoadingIndicator />
       <NuxtPage />
+      <UNotifications class="w-full sm:w-96" />
     </main>
   </div>
 </template>
