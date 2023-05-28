@@ -54,5 +54,11 @@ export default defineNuxtConfig({
                 base: resolve(__dirname, 'articles'),
             },
         },
+        highlight: {
+            theme: {
+                default: 'rose-pine-dawn',
+                dark: 'rose-pine-moon',
+            },
+        },
     },
 })
