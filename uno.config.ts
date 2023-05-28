@@ -1,4 +1,5 @@
 import { defineConfig, presetAttributify, presetIcons, presetTypography, presetUno, transformerDirectives, transformerVariantGroup } from 'unocss'
+import { presetScrollbar } from 'unocss-preset-scrollbar'
 
 export default defineConfig({
   presets: [
@@ -27,6 +28,7 @@ export default defineConfig({
       },
     }),
     presetUno(),
+    presetScrollbar(),
   ],
   theme: {
     breakpoints: {

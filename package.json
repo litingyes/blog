@@ -40,7 +40,8 @@
     "stylelint": "^15.6.2",
     "stylelint-config-recommended-scss": "^12.0.0",
     "stylelint-config-recommended-vue": "^1.4.0",
-    "typescript": "^5.0.4"
+    "typescript": "^5.0.4",
+    "unocss-preset-scrollbar": "^0.2.1"
   },
   "config": {
     "commitizen": {
