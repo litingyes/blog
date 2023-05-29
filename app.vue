@@ -11,13 +11,13 @@ function switchTheme(e: MouseEvent) {
 
   // @ts-expect-error startViewTransition 是新的API
   if (!document?.startViewTransition) {
-    colorMode.value = (dark ? 'light' : 'dark')
+    colorMode.preference = (dark ? 'light' : 'dark')
     return
   }
 
   // @ts-expect-error startViewTransition 是新的API
   const transition = document?.startViewTransition(async () => {
-    colorMode.value = (dark ? 'light' : 'dark')
+    colorMode.preference = (dark ? 'light' : 'dark')
     await nextTick()
   })
   const x = e.clientX
