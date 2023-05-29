@@ -15,8 +15,6 @@ export default defineNuxtConfig({
         '@nuxt/content',
     ],
     colorMode: {
-        preference: 'dark',
-        fallback: 'dark',
         storageKey: 'liting-blog-color-mode',
     },
     css: [
