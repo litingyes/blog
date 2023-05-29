@@ -1,11 +1,11 @@
-import { NuxtPicture } from '../.nuxt/components';
+import { NuxtPicture, NuxtImg } from '../.nuxt/components';
 <script setup lang="ts">
 </script>
 
 <template>
   <div id="page-index" class="relative h-full w-screen flex items-center justify-center overflow-y-auto">
     <div class="md:3/5 mt-4 w-9/10 flex justify-center overflow-hidden rounded-xl bg-slate-200 drop-shadow-lg transition-transform lg:w-192 sm:w-4/5 hover:scale-[1.01] dark:bg-slate-700">
-      <NuxtPicture class="hidden sm:block sm:w-1/2" src="/images/homePersonal.jpg" sizes="sm:40vw md:288 lg:384" format="webp" />
+      <NuxtImg class="hidden sm:block sm:w-1/2" src="/images/homePersonal.jpg" sizes="sm:40vw md:288 lg:384" format="webp" />
       <div class="p-2 prose sm:w-1/2 lg:p-8 md:p-6 sm:p-4">
         <div class="text-center text-xl font-semibold">
           文侯

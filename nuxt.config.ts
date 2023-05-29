@@ -32,6 +32,7 @@ export default defineNuxtConfig({
             md: 960,
             lg: 1440,
         },
+        provider: 'ipx',
     },
     pwa: {
         registerType: 'autoUpdate',
