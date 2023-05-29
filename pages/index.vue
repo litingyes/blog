@@ -1,4 +1,3 @@
-import { NuxtPicture, NuxtImg } from '../.nuxt/components';
 <script setup lang="ts">
 </script>
 
@@ -28,7 +27,7 @@ import { NuxtPicture, NuxtImg } from '../.nuxt/components';
           </NuxtLink>
           <NuxtLink to="https://twitter.com/liting_yes" target="__black">
             <li class="m-0 h-8 w-8 p-0 hover:bg-slate-300 btn-container dark:hover:bg-slate-600">
-              <span class="i-ri:twitter-line" />
+              <span class="i-line-md:twitter" />
             </li>
           </NuxtLink>
           <UTooltip text="2972188187">
