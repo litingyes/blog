@@ -1,8 +1,8 @@
 {
   "private": true,
   "engines": {
-    "node": "^18.13.0",
-    "pnpm": "^8.6.0"
+    "node": "^>=18",
+    "pnpm": ">=8"
   },
   "scripts": {
     "build": "nuxt build",
