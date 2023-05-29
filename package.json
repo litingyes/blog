@@ -18,7 +18,7 @@
     "@commitlint/cz-commitlint": "^17.5.0",
     "@iconify/json": "^2.2.69",
     "@nuxt/content": "^2.6.0",
-    "@nuxt/image-edge": "1.0.0-28085504.69f8eb0",
+    "@nuxt/image-edge": "1.0.0-28088623.13d7a6d",
     "@nuxthq/ui": "^2.1.0",
     "@nuxtjs/color-mode": "^3.2.0",
     "@nuxtjs/eslint-module": "^4.1.0",
