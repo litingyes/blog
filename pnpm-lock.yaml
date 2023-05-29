@@ -24,8 +24,8 @@ devDependencies:
     specifier: ^2.6.0
     version: 2.6.0(rollup@2.79.1)
   '@nuxt/image-edge':
-    specifier: 1.0.0-28088623.13d7a6d
-    version: 1.0.0-28088623.13d7a6d(rollup@2.79.1)
+    specifier: 1.0.0-28088649.74a91bd
+    version: 1.0.0-28088649.74a91bd(rollup@2.79.1)
   '@nuxthq/ui':
     specifier: ^2.1.0
     version: 2.1.0(rollup@2.79.1)(ts-node@10.9.1)(vue@3.3.4)(webpack@5.84.0)
@@ -2181,8 +2181,8 @@ packages:
     resolution: {integrity: sha512-GBzP8zOc7CGWyFQS6dv1lQz8VVpz5C2yRszbXufwG/9zhStTIH50EtD87NmWbTMwXDvZLNg8GIpb1UFdH93JCA==}
     dev: true
 
-  /@nuxt/image-edge@1.0.0-28088623.13d7a6d(rollup@2.79.1):
-    resolution: {integrity: sha512-Ku9teBYOeqqalfqTCQjbUh6nF7RVqVz1/V0V84TBvBo2PGQ6eQu8qvEehh+WhtLD8kbydL0e5h4tmpnurWWghQ==}
+  /@nuxt/image-edge@1.0.0-28088649.74a91bd(rollup@2.79.1):
+    resolution: {integrity: sha512-txDc0BMWxU8/KerAXqLd4O6s8LA5LRESapYarld1VfG+G28XS4LwlfzARJ8x/nB2FlfrdeulfPl6QKp57ETU0w==}
     engines: {node: ^14.16.0 || >=16.11.0}
     dependencies:
       '@nuxt/kit': 3.5.1(rollup@2.79.1)
