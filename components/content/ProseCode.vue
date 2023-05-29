@@ -38,7 +38,7 @@ function copyCode() {
 <template>
   <div ref="proseCodeRef" class="relative border-1 border-slate-200 rounded-lg border-solid transition dark:shadow-slate-900 hover:shadow-lg">
     <div class="absolute right-4 top-2 text-lg text-slate-500">
-      <span v-show="!isHover" class="">{{ props.language }}</span>
+      <span v-show="!isHover" class="">{{ props.language ?? '未设置语言' }}</span>
       <span v-show="isHover && !copied" class="i-fluent:copy-16-regular cursor-pointer hover:text-slate-900 dark:hover:text-slate-200" @click="copyCode" />
       <span v-show="isHover && copied" class="i-fluent:copy-16-filled" />
     </div>
