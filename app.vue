@@ -47,8 +47,8 @@ function switchTheme(e: MouseEvent) {
     <nav class="h-16 flex items-center justify-end border-b-2 border-gray-1 border-solid px-8 dark:border-slate-700">
       <div ref="themeIconRef" class="h-9 w-9 flex-col btn-container" @click="switchTheme">
         <TransitionGroup name="list">
-          <span v-if="displayLightIcon" key="light" class="i-ic:outline-light-mode text-2xl" />
-          <span v-else key="dark" class="i-ic:outline-dark-mode text-2xl" />
+          <span v-show="displayLightIcon" key="light" class="i-ic:outline-light-mode text-2xl" />
+          <span v-show="!displayLightIcon" key="dark" class="i-ic:outline-dark-mode text-2xl" />
         </TransitionGroup>
       </div>
     </nav>

@@ -19,6 +19,7 @@ export default defineNuxtConfig({
     ],
     colorMode: {
         storageKey: 'liting-blog-color-mode',
+        preference: 'dark',
     },
     css: [
         '@unocss/reset/tailwind-compat.css',
