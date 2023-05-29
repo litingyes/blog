@@ -1,17 +1,29 @@
 <script setup lang="ts">
+const router = useRouter()
+const nextHashStore = useNextHash()
+
 function scrollSmooth(id: string) {
+  nextHashStore.setNextHash(`#${id}`)
   document?.querySelector(`#${id}`)?.scrollIntoView({
     behavior: 'smooth',
     block: 'start',
   })
 }
+
+const contentContainerRef = ref()
+useScroll(contentContainerRef, {
+  throttle: 200,
+  onStop() {
+    router.replace({ hash: nextHashStore.nextHash })
+  },
+})
 </script>
 
 <template>
   <div class="article-layout relative">
     <ContentDoc v-slot="{ doc }">
       <div class="absolute left-0 top-0 hidden w-48 sm:block" />
-      <div class="scrollbar-primary absolute inset-0 h-full scroll-py-2 scroll-smooth">
+      <div ref="contentContainerRef" class="absolute inset-0 h-full scroll-py-2 scrollbar-primary">
         <ContentRenderer class="mx-auto px-8 py-4 prose prose-slate dark:prose-invert" :value="doc" />
       </div>
       <div class="absolute right-0 top-0 hidden w-64 flex-col py-8 md:flex">

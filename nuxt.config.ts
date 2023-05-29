@@ -13,6 +13,9 @@ export default defineNuxtConfig({
         '@vueuse/nuxt',
         '@vite-pwa/nuxt',
         '@nuxt/content',
+        ['@pinia/nuxt', {
+            autoImports: ['defineStore', 'storeToRefs'],
+        }],
     ],
     colorMode: {
         storageKey: 'liting-blog-color-mode',
@@ -58,5 +61,14 @@ export default defineNuxtConfig({
                 dark: 'rose-pine-moon',
             },
         },
+        markdown: {
+            anchorLinks: {
+                depth: 2,
+                exclude: [1],
+            },
+        },
+    },
+    imports: {
+        dirs: ['stores'],
     },
 })
