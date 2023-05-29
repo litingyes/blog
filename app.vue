@@ -44,7 +44,10 @@ function switchTheme(e: MouseEvent) {
 
 <template>
   <div class="nuxt-app h-screen w-screen bg-slate-50 dark:bg-slate-800">
-    <nav class="h-16 flex items-center justify-end border-b-2 border-gray-1 border-solid px-8 dark:border-slate-700">
+    <nav class="h-16 flex items-center justify-between border-b-2 border-gray-1 border-solid px-8 dark:border-slate-700">
+      <NuxtLink to="/">
+        <span class="i-fa-solid:feather-alt text-2xl sm:text-3xl" />
+      </NuxtLink>
       <div ref="themeIconRef" class="h-9 w-9 flex-col btn-container" @click="switchTheme">
         <TransitionGroup name="list">
           <span v-show="displayLightIcon" key="light" class="i-ic:outline-light-mode text-2xl" />
