@@ -48,7 +48,7 @@ export default defineNuxtConfig({
         sources: {
             content: {
                 driver: 'fs',
-                prefix: '/article',
+                prefix: '/articles',
                 base: resolve(__dirname, 'articles'),
             },
         },
