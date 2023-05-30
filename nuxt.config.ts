@@ -17,6 +17,7 @@ export default defineNuxtConfig({
             autoImports: ['defineStore', 'storeToRefs'],
         }],
         'dayjs-nuxt',
+        'nuxt-simple-sitemap',
     ],
     colorMode: {
         storageKey: 'liting-blog-color-mode',
@@ -76,6 +77,9 @@ export default defineNuxtConfig({
         // defaultLocale: 'zh-cn',
         // defaultTimezone: 'Asia/Shanghai',
         // plugins: ['utc', 'timezone'],
+    },
+    sitemap: {
+        siteUrl: 'https://www.liting.ink',
     },
     imports: {
         dirs: ['stores'],

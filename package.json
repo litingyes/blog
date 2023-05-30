@@ -42,6 +42,7 @@
     "inquirer": "^8.2.5",
     "lint-staged": "^13.2.2",
     "nuxt": "^3.5.1",
+    "nuxt-simple-sitemap": "^2.6.1",
     "pinia": "^2.1.3",
     "reading-time": "^1.5.0",
     "sass": "^1.62.1",
