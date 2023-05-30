@@ -18,6 +18,7 @@ export default defineNuxtConfig({
         }],
         'dayjs-nuxt',
         'nuxt-simple-sitemap',
+        '@nuxtjs/robots',
     ],
     colorMode: {
         storageKey: 'liting-blog-color-mode',

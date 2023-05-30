@@ -34,6 +34,9 @@ devDependencies:
   '@nuxtjs/fontaine':
     specifier: ^0.2.5
     version: 0.2.5(rollup@2.79.1)
+  '@nuxtjs/robots':
+    specifier: ^3.0.0
+    version: 3.0.0(rollup@2.79.1)
   '@nuxtjs/stylelint-module':
     specifier: ^5.1.0
     version: 5.1.0(postcss@8.4.24)(rollup@2.79.1)(stylelint@15.6.2)(vite@4.3.9)(webpack@5.84.1)
@@ -2695,6 +2698,16 @@ packages:
       ufo: 1.1.2
     transitivePeerDependencies:
       - encoding
+      - rollup
+      - supports-color
+    dev: true
+
+  /@nuxtjs/robots@3.0.0(rollup@2.79.1):
+    resolution: {integrity: sha512-qsHGW1KXBvV5Kq7u3huPnFCUTbHS4Fk8Za2mNPgmUXcwLgp3exvhPtdZfIdjrCF/aZk3A8OZONNmGghs6CecBA==}
+    dependencies:
+      '@nuxt/kit': 3.5.2(rollup@2.79.1)
+      h3: 1.6.6
+    transitivePeerDependencies:
       - rollup
       - supports-color
     dev: true
