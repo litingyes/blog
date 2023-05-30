@@ -17,6 +17,7 @@ export default defineNuxtConfig({
         'dayjs-nuxt',
         'nuxt-simple-sitemap',
         'nuxt-simple-robots',
+        'nuxt-module-feed',
     ],
     colorMode: {
         storageKey: 'liting-blog-color-mode',
@@ -85,6 +86,15 @@ export default defineNuxtConfig({
     },
     robots: {
         sitemap: '/sitemap.xml',
+    },
+    feed: {
+        sources: [
+            {
+                path: '/rss.xml',
+                type: 'rss2',
+                cacheTime: 60 * 15,
+            },
+        ],
     },
     imports: {
         dirs: ['stores'],

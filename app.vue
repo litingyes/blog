@@ -48,11 +48,16 @@ function switchTheme(e: MouseEvent) {
       <NuxtLink to="/">
         <span class="i-fa-solid:feather-alt text-2xl sm:text-3xl" />
       </NuxtLink>
-      <div ref="themeIconRef" class="h-9 w-9 flex-col btn-container" @click="switchTheme">
-        <TransitionGroup name="list">
-          <span v-show="displayLightIcon" key="light" class="i-ic:outline-light-mode text-2xl" />
-          <span v-show="!displayLightIcon" key="dark" class="i-ic:outline-dark-mode text-2xl" />
-        </TransitionGroup>
+      <div class="flex items-center gap-2">
+        <NuxtLink class="h-9 w-9 btn-container" to="/rss.xml">
+          <span class="i-ic:round-rss-feed text-2xl" />
+        </NuxtLink>
+        <div ref="themeIconRef" class="h-9 w-9 flex-col btn-container" @click="switchTheme">
+          <TransitionGroup name="list">
+            <span v-show="displayLightIcon" key="light" class="i-ic:outline-light-mode text-2xl" />
+            <span v-show="!displayLightIcon" key="dark" class="i-ic:outline-dark-mode text-2xl" />
+          </TransitionGroup>
+        </div>
       </div>
     </nav>
     <main class="nuxt-app__main h-full pt-16 scrollbar-primary">
