@@ -28,10 +28,10 @@ const dayjs = useDayjs()
 </script>
 
 <template>
-  <div class="article-layout relative">
+  <div class="article-layout relative h-screen">
     <ContentDoc v-slot="{ doc }">
       <div class="absolute left-0 top-0 hidden w-48 sm:block" />
-      <div ref="contentContainerRef" class="absolute inset-0 h-screen scroll-py-2 pt-16 scrollbar-primary">
+      <div ref="contentContainerRef" class="absolute inset-0 h-full scroll-py-2 pt-16 scrollbar-primary">
         <div class="mx-auto px-8 py-4 prose prose-slate dark:prose-invert">
           <h1>{{ doc.title ?? '暂无标题' }}</h1>
           <p v-if="doc.description" class="text-slate-600 dark:text-slate-400">
@@ -70,8 +70,6 @@ const dayjs = useDayjs()
 
 <style lang="scss" scoped>
 .article-layout {
-  height: calc(100vh - 4rem);
-
   .slide-enter-active,
   .slide-leave-active  {
     transition: all 0.5s ease;
