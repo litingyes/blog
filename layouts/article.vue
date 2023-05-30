@@ -11,12 +11,18 @@ function scrollSmooth(id: string) {
 }
 
 const contentContainerRef = ref()
-useScroll(contentContainerRef, {
+const { y } = useScroll(contentContainerRef, {
   throttle: 200,
+  behavior: 'smooth',
   onStop() {
     router.replace({ hash: nextHashStore.nextHash })
   },
 })
+const displayUpArrow = computed(() => (y.value >= 400))
+function scrollToTop() {
+  nextHashStore.setNextHash('')
+  y.value = 0
+}
 </script>
 
 <template>
@@ -26,11 +32,16 @@ useScroll(contentContainerRef, {
       <div ref="contentContainerRef" class="absolute inset-0 h-full scroll-py-2 scrollbar-primary">
         <ContentRenderer class="mx-auto px-8 py-4 prose prose-slate dark:prose-invert" :value="doc" />
       </div>
-      <div class="absolute right-0 top-0 hidden w-64 flex-col py-8 md:flex">
+      <div class="absolute bottom-0 right-0 top-0 hidden w-64 flex-col py-8 md:flex">
         <a v-for="link in doc?.body?.toc?.links" :key="link.id" class="overflow-hidden text-ellipsis px-2 py-1" :href="`#${link.id}`" @click.prevent="scrollSmooth(link.id)">
           <span class="relative inline-block after:content-['']" after="absolute inset-y-0 left-0 w-0 transition-all hover:(border-b-2 w-full) border-slate-500">{{ link.text }}</span>
         </a>
       </div>
+      <Transition name="slide">
+        <div v-show="displayUpArrow" class="fixed bottom-8 right-4 h-10 w-10 text-4xl md:right-72 btn-container" @click="scrollToTop">
+          <span class="i-mingcute:arrow-up-fill" />
+        </div>
+      </Transition>
     </ContentDoc>
   </div>
 </template>
@@ -38,5 +49,16 @@ useScroll(contentContainerRef, {
 <style lang="scss" scoped>
 .article-layout {
   height: calc(100vh - 4rem);
+
+  .slide-enter-active,
+  .slide-leave-active  {
+    transition: all 0.5s ease;
+  }
+
+  .slide-enter-from,
+  .slide-leave-to {
+    opacity: 0;
+    transform: translateY(100px);
+  }
 }
 </style>
