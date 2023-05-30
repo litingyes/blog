@@ -4,8 +4,6 @@ description: 测试 @nuxt/content 模块的md文件显示
 postDate: 2023-05-27
 ---
 
-# h1 Heading
-
 ## h2 Heading
 
 ### h3 Heading

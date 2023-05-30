@@ -23,6 +23,8 @@ function scrollToTop() {
   nextHashStore.setNextHash('')
   y.value = 0
 }
+
+const dayjs = useDayjs()
 </script>
 
 <template>
@@ -30,7 +32,27 @@ function scrollToTop() {
     <ContentDoc v-slot="{ doc }">
       <div class="absolute left-0 top-0 hidden w-48 sm:block" />
       <div ref="contentContainerRef" class="absolute inset-0 h-full scroll-py-2 scrollbar-primary">
-        <ContentRenderer class="mx-auto px-8 py-4 prose prose-slate dark:prose-invert" :value="doc" />
+        <div class="mx-auto px-8 py-4 prose prose-slate dark:prose-invert">
+          <h1>{{ doc.title ?? '暂无标题' }}</h1>
+          <p v-if="doc.description" class="text-slate-600 dark:text-slate-400">
+            {{ doc.description }}
+          </p>
+          <div class="flex items-center gap-4 text-slate-500">
+            <div v-if="doc.postDate" class="flex items-center gap-1">
+              <span class="i-mdi:date-range" />
+              <span>{{ dayjs(doc.postDate).format('ddd YYYY-MM-DD') }}</span>
+            </div>
+            <div v-if="doc.totalCount" class="flex items-center gap-1">
+              <span class="i-gridicons:stats" />
+              <span>约{{ Math.ceil(doc.totalCount) }}字</span>
+            </div>
+            <div v-if="doc.readMinutes" class="flex items-center gap-1">
+              <span class="i-mdi:clock-outline" />
+              <span>耗时{{ Math.ceil(doc.readMinutes) }}分钟</span>
+            </div>
+          </div>
+          <ContentRenderer :value="doc" />
+        </div>
       </div>
       <div class="absolute bottom-0 right-0 top-0 hidden w-64 flex-col py-8 md:flex">
         <a v-for="link in doc?.body?.toc?.links" :key="link.id" class="overflow-hidden text-ellipsis px-2 py-1" :href="`#${link.id}`" @click.prevent="scrollSmooth(link.id)">

@@ -16,6 +16,7 @@ export default defineNuxtConfig({
         ['@pinia/nuxt', {
             autoImports: ['defineStore', 'storeToRefs'],
         }],
+        'dayjs-nuxt',
     ],
     colorMode: {
         storageKey: 'liting-blog-color-mode',
@@ -69,6 +70,12 @@ export default defineNuxtConfig({
                 exclude: [1],
             },
         },
+    },
+    dayjs: {
+        // locales: ['zh-cn'],
+        // defaultLocale: 'zh-cn',
+        // defaultTimezone: 'Asia/Shanghai',
+        // plugins: ['utc', 'timezone'],
     },
     imports: {
         dirs: ['stores'],
