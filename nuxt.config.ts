@@ -18,7 +18,7 @@ export default defineNuxtConfig({
         }],
         'dayjs-nuxt',
         'nuxt-simple-sitemap',
-        '@nuxtjs/robots',
+        'nuxt-simple-robots',
     ],
     colorMode: {
         storageKey: 'liting-blog-color-mode',
@@ -82,7 +82,15 @@ export default defineNuxtConfig({
     sitemap: {
         siteUrl: 'https://www.liting.ink',
     },
+    robots: {
+        sitemap: '/sitemap.xml',
+    },
     imports: {
         dirs: ['stores'],
+    },
+    runtimeConfig: {
+        public: {
+            siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://www.liting.ink',
+        },
     },
 })
