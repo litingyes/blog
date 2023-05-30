@@ -13,9 +13,7 @@ export default defineNuxtConfig({
         '@vueuse/nuxt',
         '@vite-pwa/nuxt',
         '@nuxt/content',
-        ['@pinia/nuxt', {
-            autoImports: ['defineStore', 'storeToRefs'],
-        }],
+        '@pinia/nuxt',
         'dayjs-nuxt',
         'nuxt-simple-sitemap',
         'nuxt-simple-robots',
@@ -72,6 +70,9 @@ export default defineNuxtConfig({
                 exclude: [1],
             },
         },
+    },
+    pinia: {
+        autoImports: ['defineStore', 'storeToRefs'],
     },
     dayjs: {
         // locales: ['zh-cn'],
