@@ -44,7 +44,7 @@ function switchTheme(e: MouseEvent) {
 
 <template>
   <div class="nuxt-app h-screen w-screen bg-slate-50 dark:bg-slate-800">
-    <nav class="fixed z-10 h-16 w-full flex items-center justify-between border-b-2 border-gray-1 border-solid px-8 dark:border-slate-700">
+    <nav class="fixed z-10 h-16 w-full flex items-center justify-between border-b-2 border-gray-1 border-solid px-8 backdrop-blur-md dark:border-slate-700">
       <NuxtLink to="/">
         <span class="i-fa-solid:feather-alt text-2xl sm:text-3xl" />
       </NuxtLink>
@@ -60,7 +60,7 @@ function switchTheme(e: MouseEvent) {
         </div>
       </div>
     </nav>
-    <main class="nuxt-app__main h-full pt-16 scrollbar-primary">
+    <main class="nuxt-app__main h-full">
       <NuxtLoadingIndicator />
       <NuxtPage />
       <UNotifications class="w-full sm:w-96" />
