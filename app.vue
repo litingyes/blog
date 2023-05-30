@@ -44,7 +44,7 @@ function switchTheme(e: MouseEvent) {
 
 <template>
   <div class="nuxt-app h-screen w-screen bg-slate-50 dark:bg-slate-800">
-    <nav class="h-16 flex items-center justify-between border-b-2 border-gray-1 border-solid px-8 dark:border-slate-700">
+    <nav class="fixed z-10 h-16 w-full flex items-center justify-between border-b-2 border-gray-1 border-solid px-8 dark:border-slate-700">
       <NuxtLink to="/">
         <span class="i-fa-solid:feather-alt text-2xl sm:text-3xl" />
       </NuxtLink>
@@ -55,7 +55,7 @@ function switchTheme(e: MouseEvent) {
         </TransitionGroup>
       </div>
     </nav>
-    <main class="nuxt-app__main overflow-y-auto" scrollbar="~ rounded track-color-slate-200 dark:track-color-slate-700 thumb-color-slate-300 dark:thumb-color-slate-600">
+    <main class="nuxt-app__main h-full pt-16 scrollbar-primary">
       <NuxtLoadingIndicator />
       <NuxtPage />
       <UNotifications class="w-full sm:w-96" />
@@ -76,10 +76,6 @@ function switchTheme(e: MouseEvent) {
   .list-leave-to {
     opacity: 0;
     transform: translateY(30px);
-  }
-
-  &__main {
-    height: calc(100vh - 4rem);
   }
 }
 </style>
