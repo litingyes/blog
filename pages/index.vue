@@ -7,7 +7,7 @@ const dayjs = useDayjs()
     <div class="relative h-full w-screen flex items-center justify-center">
       <div class="md:3/5 mt-4 w-9/10 flex justify-center overflow-hidden rounded-xl bg-slate-200 drop-shadow-lg transition-transform lg:w-192 sm:w-4/5 hover:scale-[1.01] dark:bg-slate-700">
         <NuxtImg class="hidden sm:block sm:w-1/2" src="/images/homePersonal.jpg" sizes="sm:40vw md:288 lg:384" format="webp" />
-        <div class="p-2 prose sm:w-1/2 lg:p-8 md:p-6 sm:p-4">
+        <div class="p-4 prose sm:w-1/2 lg:p-8 md:p-6">
           <div class="text-center text-xl font-semibold">
             文侯
           </div>
@@ -38,11 +38,46 @@ const dayjs = useDayjs()
               </li>
             </UTooltip>
           </ul>
+          <div class="flex flex-wrap items-center justify-center gap-2">
+            <NuxtLink to="https://developer.mozilla.org/zh-CN/docs/Web/HTML" target="__blank">
+              <span class="i-vscode-icons:file-type-html" />
+            </NuxtLink>
+            <NuxtLink to="https://developer.mozilla.org/zh-CN/docs/Web/CSS" target="__blank">
+              <span class="i-vscode-icons:file-type-css" />
+            </NuxtLink>
+            <NuxtLink to="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript" target="__blank">
+              <span class="i-logos:javascript" />
+            </NuxtLink>
+            <NuxtLink to="https://www.typescriptlang.org/zh/" target="__blank">
+              <span class="i-logos:typescript-icon" />
+            </NuxtLink>
+            <NuxtLink to="https://cn.vuejs.org/" target="__blank">
+              <span class="i-logos:vue" />
+            </NuxtLink>
+            <NuxtLink to="https://nuxt.com/" target="__blank">
+              <span class="i-logos:nuxt-icon" />
+            </NuxtLink>
+            <NuxtLink to="https://react.dev/" target="__blank">
+              <span class="i-logos:react" />
+            </NuxtLink>
+            <NuxtLink to="https://nextjs.org/" target="__blank">
+              <span class="i-logos:nextjs-icon" />
+            </NuxtLink>
+            <NuxtLink to="https://www.rust-lang.org/zh-CN/" target="__blank">
+              <span class="i-logos:rust" />
+            </NuxtLink>
+            <NuxtLink to="https://www.python.org/" target="__blank">
+              <span class="i-logos:python" />
+            </NuxtLink>
+            <NuxtLink to="https://docs.oracle.com/en/java/" target="__blank">
+              <span class="i-logos:java" />
+            </NuxtLink>
+          </div>
           <p>
             中国湖南邵阳人，毕业于山东大学（2019级本科）
           </p>
-          <p>当前主要学习方向为前端开发，包括但不限于前端工程化、数据可视化、Rust，业余也在学习后端开发和UI设计</p>
-          <p>不善言辞但渴望爱情的单身狗 🐶</p>
+          <p>当前主要学习方向为前端开发，包括但不限于前端工程化、数据可视化、Rust，业余也在拓展后端开发、UI设计等领域</p>
+          <p>欢迎加我QQ，一起交流学习，共勉</p>
         </div>
       </div>
     </div>
