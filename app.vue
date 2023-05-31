@@ -49,6 +49,9 @@ function switchTheme(e: MouseEvent) {
         <span class="i-fa-solid:feather-alt text-2xl sm:text-3xl" />
       </NuxtLink>
       <div class="flex items-center gap-2">
+        <NuxtLink class="h-9 w-14 text-xl btn-container" to="/article">
+          文章
+        </NuxtLink>
         <NuxtLink class="h-9 w-9 btn-container" to="/rss.xml" target="__blank">
           <span class="i-ic:round-rss-feed text-2xl" />
         </NuxtLink>

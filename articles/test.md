@@ -2,6 +2,8 @@
 title: 测试页面
 description: 测试 @nuxt/content 模块的md文件显示
 postDate: 2023-05-27
+tags:
+  - 测试
 ---
 
 ## h2 Heading

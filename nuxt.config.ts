@@ -18,6 +18,7 @@ export default defineNuxtConfig({
         'nuxt-simple-sitemap',
         'nuxt-simple-robots',
         'nuxt-module-feed',
+        'nuxt-lodash',
     ],
     colorMode: {
         storageKey: 'liting-blog-color-mode',
