@@ -43,7 +43,7 @@ function switchTheme(e: MouseEvent) {
 </script>
 
 <template>
-  <div class="nuxt-app h-screen w-screen bg-slate-50 text-slate-950 dark:bg-slate-800 dark:text-slate-50">
+  <div class="nuxt-app h-screen w-screen bg-slate-50 text-slate-900 dark:bg-slate-800 dark:text-slate-100">
     <nav class="fixed z-10 h-16 w-full flex items-center justify-between border-b-2 border-gray-1 border-solid px-8 backdrop-blur-md dark:border-slate-700">
       <NuxtLink to="/">
         <span class="i-fa-solid:feather-alt text-2xl sm:text-3xl" />

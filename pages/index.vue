@@ -62,7 +62,7 @@ const dayjs = useDayjs()
               {{ article.description }}
             </p>
           </div>
-          <NuxtLink class="flex items-center text-slate-500 hover:text-slate-950 dark:hover:text-slate-50" :to="article._path">
+          <NuxtLink class="flex items-center text-slate-500 hover:font-semibold hover:text-slate-800 dark:hover:text-slate-200" :to="article._path">
             <span class="">跳转阅读</span>
             <span class="i-ic:round-keyboard-arrow-right text-xl" />
           </NuxtLink>
