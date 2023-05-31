@@ -75,7 +75,7 @@ const dayjs = useDayjs()
           </div>
           <div class="m-0 w-32 flex flex-col items-end justify-center pr-1">
             <span class="text-slate-500">{{ dayjs(article.postDate).format('ddd YYYY-MM-DD') }}</span>
-            <NuxtLink class="relative flex items-center text-slate-500 no-underline hover:text-slate-950 after:content-[''] hover:after:(w-full border-b-2) dark:hover:text-slate-50" after="absolute inset-y-0 left-0 w-0 transition-all  border-black dark:border-white" :to="article._path">
+            <NuxtLink class="flex items-center text-slate-500 hover:text-slate-950 link dark:hover:text-slate-50" :to="article._path">
               <span>跳转阅读</span>
               <span class="i-ic:round-keyboard-arrow-right text-xl" />
             </NuxtLink>

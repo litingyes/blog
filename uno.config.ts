@@ -41,6 +41,7 @@ export default defineConfig({
     'btn-container': 'dark:hover:bg-slate-700 hover:bg-slate-200 rounded-lg flex justify-center items-center cursor-pointer',
     'scrollbar-primary': 'scrollbar scrollbar-rounded scrollbar-track-color-slate-200 dark:scrollbar-track-color-slate-700 scrollbar-thumb-color-slate-300 dark:scrollbar-thumb-color-slate-600',
     'scrollbar-hidden': 'scrollbar scrollbar-w-0',
+    'link': 'no-underline relative after:(absolute inset-y-0 left-0 block w-0 border-black transition-all content-[\'\'] dark:border-white) hover:after:(w-full border-b-2)',
   },
   transformers: [
     transformerDirectives(),

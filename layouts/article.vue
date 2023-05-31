@@ -56,7 +56,7 @@ const dayjs = useDayjs()
       </div>
       <div class="absolute bottom-0 right-0 top-16 hidden w-64 py-8 md:block scrollbar-hidden">
         <a v-for="link in doc?.body?.toc?.links" :key="link.id" class="block overflow-hidden text-ellipsis px-2 py-1 hover:font-bold hover:text-black dark:hover:text-white" :href="`#${link.id}`" @click.prevent="scrollSmooth(link.id)">
-          <span class="relative inline-block after:content-[''] hover:after:(w-full border-b-2)" after="absolute inset-y-0 left-0 w-0 transition-all  border-black dark:border-white">{{ link.text }}</span>
+          <span class="link">{{ link.text }}</span>
         </a>
       </div>
       <Transition name="slide">
