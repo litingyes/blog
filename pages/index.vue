@@ -83,22 +83,22 @@ const dayjs = useDayjs()
     </div>
     <ul class="mx-auto mb-8 w-full px-2 py-4 md:w-6xl">
       <ContentList v-slot="{ list }">
-        <li v-for="article in list" :key="article._path" class="h-32 flex items-center justify-between border-b-1 py-4 first:border-t-1">
-          <div class="flex flex-col justify-center">
+        <li v-for="article in list" :key="article._path" class="h-24 flex items-center justify-between gap-2 border-b-1 py-4 md:h-32 first:border-t-1">
+          <div class="hidden flex-col justify-center md:flex">
             <span v-if="article.postDate" class="font-bold">{{ dayjs(article.postDate).format('dddd YYYY-MM-DD') }}</span>
             <span class="text-slate-500">约{{ Math.ceil(article.totalCount) }}字</span>
             <span class="text-slate-500">阅读耗时{{ Math.ceil(article.readMinutes) }}分钟</span>
           </div>
-          <div class="flex flex-1 flex-col justify-center gap-2 px-16">
-            <h2 class="overflow-hidden text-ellipsis text-xl font-bold">
+          <div class="flex flex-1 flex-col justify-center gap-2 md:px-16">
+            <h2 class="overflow-hidden text-ellipsis whitespace-nowrap text-lg font-bold md:text-xl">
               {{ article.title }}
             </h2>
-            <p class="overflow-hidden text-ellipsis text-lg text-slate-500">
+            <p class="overflow-hidden text-ellipsis whitespace-nowrap text-sm text-slate-500 md:text-lg">
               {{ article.description }}
             </p>
           </div>
           <NuxtLink class="flex items-center text-slate-500 hover:font-semibold hover:text-slate-800 link dark:hover:text-slate-200" :to="article._path">
-            <span class="">跳转阅读</span>
+            <span class="text-sm md:text-base">跳转阅读</span>
             <span class="i-ic:round-keyboard-arrow-right text-xl" />
           </NuxtLink>
         </li>

@@ -31,13 +31,13 @@ const dayjs = useDayjs()
   <div class="article-layout relative h-screen">
     <ContentDoc v-slot="{ doc }">
       <div class="absolute left-0 top-0 hidden w-48 sm:block" />
-      <div ref="contentContainerRef" class="absolute inset-0 h-full scroll-py-2 pt-16 scrollbar-primary">
+      <div ref="contentContainerRef" class="absolute inset-0 h-full scroll-py-2 pt-16 scrollbar-primary md:pl-48 md:pr-64">
         <div class="mx-auto px-8 py-4 prose prose-slate dark:prose-invert">
           <h1>{{ doc.title ?? '暂无标题' }}</h1>
           <p v-if="doc.description" class="text-slate-600 dark:text-slate-400">
             {{ doc.description }}
           </p>
-          <div class="flex items-center gap-4 text-slate-500">
+          <div class="flex flex-col text-slate-500 sm:flex-row sm:items-center sm:gap-4">
             <div v-if="doc.postDate" class="flex items-center gap-1">
               <span class="i-mdi:date-range" />
               <span>{{ dayjs(doc.postDate).format('ddd YYYY-MM-DD') }}</span>
