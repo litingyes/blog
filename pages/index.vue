@@ -104,5 +104,10 @@ const dayjs = useDayjs()
         </li>
       </ContentList>
     </ul>
+    <div class="flex items-center justify-center gap-1 py-4 text-slate-500">
+      <NuxtLink class="link" to="/sitemap.xml" target="__blank">
+        sitemap
+      </NuxtLink>
+    </div>
   </div>
 </template>
