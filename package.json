@@ -26,7 +26,7 @@
     "@nuxthq/ui": "^2.1.0",
     "@nuxtjs/color-mode": "^3.2.0",
     "@nuxtjs/eslint-module": "^4.1.0",
-    "@nuxtjs/fontaine": "^0.2.5",
+    "@nuxtjs/fontaine": "^0.3.0",
     "@nuxtjs/stylelint-module": "^5.1.0",
     "@pinia/nuxt": "^0.4.11",
     "@unocss/eslint-config": "^0.52.3",
