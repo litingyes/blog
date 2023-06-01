@@ -115,4 +115,11 @@ export default defineNuxtConfig({
             mode: 'out-in',
         },
     },
+    sourcemap: {
+        client: false,
+        server: false,
+    },
+    typescript: {
+        typeCheck: true,
+    },
 })
