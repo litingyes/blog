@@ -105,4 +105,14 @@ export default defineNuxtConfig({
             siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://www.liting.ink',
         },
     },
+    app: {
+        pageTransition: {
+            name: 'page',
+            mode: 'out-in',
+        },
+        layoutTransition: {
+            name: 'page',
+            mode: 'out-in',
+        },
+    },
 })
