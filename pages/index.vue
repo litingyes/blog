@@ -4,8 +4,8 @@ const dayjs = useDayjs()
 
 <template>
   <div class="index-page relative h-full overflow-x-hidden scrollbar-primary">
-    <div class="relative h-full w-screen flex items-center justify-center">
-      <div class="md:3/5 mt-4 w-9/10 flex justify-center overflow-hidden rounded-xl bg-slate-200 drop-shadow-lg transition-transform lg:w-192 sm:w-4/5 hover:scale-[1.01] dark:bg-slate-700">
+    <div class="relative min-h-full w-screen flex items-center justify-center p-16">
+      <div class="mt-4 w-9/10 flex justify-center overflow-hidden rounded-xl bg-slate-200 drop-shadow-lg transition-transform lg:w-192 md:w-3/5 sm:w-4/5 hover:scale-[1.01] dark:bg-slate-700">
         <NuxtImg class="hidden sm:block sm:w-1/2" src="/images/homePersonal.jpg" sizes="sm:40vw md:288 lg:384" format="webp" />
         <div class="p-4 prose sm:w-1/2 lg:p-8 md:p-6">
           <div class="text-center text-xl font-semibold">
@@ -109,7 +109,7 @@ const dayjs = useDayjs()
         sitemap
       </NuxtLink>
     </div>
-    <div class="bubble font-smiley fixed left-4 top-20 h-16 w-16 flex items-center justify-center bg-slate-500/10 shadow-inner shadow-slate-300 backdrop-blur-xl md:left-12 md:top-28 dark:shadow-slate-900">
+    <div class="bubble fixed left-4 top-20 h-16 w-16 flex items-center justify-center bg-slate-500/10 shadow-inner shadow-slate-300 backdrop-blur-xl font-smiley md:left-12 md:top-28 dark:shadow-slate-900">
       2023
     </div>
   </div>
