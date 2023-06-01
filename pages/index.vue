@@ -3,7 +3,7 @@ const dayjs = useDayjs()
 </script>
 
 <template>
-  <div class="h-full overflow-x-hidden scrollbar-primary">
+  <div class="index-page relative h-full overflow-x-hidden scrollbar-primary">
     <div class="relative h-full w-screen flex items-center justify-center">
       <div class="md:3/5 mt-4 w-9/10 flex justify-center overflow-hidden rounded-xl bg-slate-200 drop-shadow-lg transition-transform lg:w-192 sm:w-4/5 hover:scale-[1.01] dark:bg-slate-700">
         <NuxtImg class="hidden sm:block sm:w-1/2" src="/images/homePersonal.jpg" sizes="sm:40vw md:288 lg:384" format="webp" />
@@ -109,5 +109,31 @@ const dayjs = useDayjs()
         sitemap
       </NuxtLink>
     </div>
+    <div class="bubble font-smiley fixed left-4 top-20 h-16 w-16 flex items-center justify-center bg-slate-500/10 shadow-inner shadow-slate-300 backdrop-blur-xl md:left-12 md:top-28 dark:shadow-slate-900">
+      2023
+    </div>
   </div>
 </template>
+
+<style lang="scss" scoped>
+.index-page {
+  .bubble {
+    animation: bubble 2s linear infinite;
+  }
+
+  @keyframes bubble {
+    0%,
+    100% {
+        border-radius: 54% 46% 50% 50% / 52% 65% 35% 48%;
+    }
+
+    33% {
+        border-radius: 76% 24% 27% 73% / 52% 39% 61% 48%;
+    }
+
+    66% {
+        border-radius: 39% 61% 69% 31% / 66% 56% 44% 34%;
+    }
+}
+}
+</style>

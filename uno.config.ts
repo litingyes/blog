@@ -37,6 +37,11 @@ export default defineConfig({
       lg: '1440px',
     },
   },
+  rules: [
+    ['font-smiley', {
+      'font-family': 'SmileySans',
+    }],
+  ],
   shortcuts: {
     'btn-container': 'dark:hover:bg-slate-700 hover:bg-slate-200 rounded-lg flex justify-center items-center cursor-pointer',
     'scrollbar-primary': 'scrollbar scrollbar-rounded scrollbar-track-color-slate-200 dark:scrollbar-track-color-slate-700 scrollbar-thumb-color-slate-300 dark:scrollbar-thumb-color-slate-600',
