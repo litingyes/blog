@@ -54,8 +54,8 @@ devDependencies:
     specifier: ^0.52.3
     version: 0.52.3
   '@vite-pwa/nuxt':
-    specifier: ^0.0.9
-    version: 0.0.9(@nuxt/kit@3.5.2)(vite-plugin-pwa@0.14.7)
+    specifier: ^0.0.10
+    version: 0.0.10(@nuxt/kit@3.5.2)(vite-plugin-pwa@0.14.7)
   '@vueuse/core':
     specifier: ^10.1.2
     version: 10.1.2(vue@3.3.4)
@@ -3884,8 +3884,8 @@ packages:
       - supports-color
     dev: true
 
-  /@vite-pwa/nuxt@0.0.9(@nuxt/kit@3.5.2)(vite-plugin-pwa@0.14.7):
-    resolution: {integrity: sha512-MM8av1LiN7Rq5qJ1rjOl9BCjWxO9/3V6D3R7UfIbSL/7f4AnwjwUjM0GHWRcU7dj4t8VhCu7Pq5BrMVnhBGDgw==}
+  /@vite-pwa/nuxt@0.0.10(@nuxt/kit@3.5.2)(vite-plugin-pwa@0.14.7):
+    resolution: {integrity: sha512-4GhLfmdC3/zoYSKdAktEAtFzSsfCx/uu0h4CqR+ufyfL0N6e4jiUqveUP/4Y5ReJ9q5JAYfDvLkX6ZZuZbsYhQ==}
     peerDependencies:
       '@nuxt/kit': ^3.0.0
       vite-plugin-pwa: ^0.14.0
@@ -13317,6 +13317,7 @@ packages:
 
   /workbox-cacheable-response@6.6.0:
     resolution: {integrity: sha512-JfhJUSQDwsF1Xv3EV1vWzSsCOZn4mQ38bWEBR3LdvOxSPgB65gAM6cS2CX8rkkKHRgiLrN7Wxoyu+TuH67kHrw==}
+    deprecated: workbox-background-sync@6.6.0
     dependencies:
       workbox-core: 6.6.0
     dev: true
