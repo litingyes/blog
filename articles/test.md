@@ -20,7 +20,7 @@ tags:
 
 ___
 
-## Typographic replacements
+## Typographic replaceme nts
 
 Enable typographer option to see result.
 
