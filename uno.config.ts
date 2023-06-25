@@ -28,7 +28,6 @@ export default defineConfig({
       },
     }),
     presetUno(),
-    // @ts-expect-error 类型不匹配？能用就先不管了
     presetScrollbar(),
   ],
   theme: {
