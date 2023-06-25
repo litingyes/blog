@@ -22,7 +22,7 @@
     "@commitlint/cz-commitlint": "^17.5.0",
     "@iconify/json": "^2.2.69",
     "@nuxt/content": "^2.6.0",
-    "@nuxt/image-edge": "1.0.0-28089462.3520a62",
+    "@nuxt/image-edge": "1.0.0-rc.1-28126030.07836ae",
     "@nuxthq/ui": "^2.1.0",
     "@nuxtjs/color-mode": "^3.2.0",
     "@nuxtjs/eslint-module": "^4.1.0",
