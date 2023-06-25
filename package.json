@@ -37,7 +37,7 @@
     "@vueuse/nuxt": "^10.1.2",
     "commitizen": "^4.3.0",
     "consola": "^3.1.0",
-    "dayjs-nuxt": "^1.1.0",
+    "dayjs-nuxt": "^1.1.2",
     "eslint": "^8.41.0",
     "inquirer": "^8.2.5",
     "lint-staged": "^13.2.2",
