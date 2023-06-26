@@ -23,8 +23,8 @@ devDependencies:
     specifier: 1.0.0-rc.1-28126030.07836ae
     version: 1.0.0-rc.1-28126030.07836ae(rollup@2.79.1)
   '@nuxthq/ui':
-    specifier: ^2.1.0
-    version: 2.1.0(rollup@2.79.1)(ts-node@10.9.1)(vue@3.3.4)(webpack@5.84.1)
+    specifier: ^2.4.1
+    version: 2.4.1(rollup@2.79.1)(ts-node@10.9.1)(vue@3.3.4)(webpack@5.84.1)
   '@nuxtjs/color-mode':
     specifier: ^3.2.0
     version: 3.2.0(rollup@2.79.1)
@@ -1768,8 +1768,8 @@ packages:
       postcss-selector-parser: 6.0.13
     dev: true
 
-  /@egoist/tailwindcss-icons@1.0.7(tailwindcss@3.3.2):
-    resolution: {integrity: sha512-GeoEZC53+zHJyBEcBc0B4hf9MGdDjy0iatW6GT4Ss+c+t8IgjsJVjz3Gg3RpCdg+rnsyRLeg5S+ubkJpaz85Rw==}
+  /@egoist/tailwindcss-icons@1.1.0(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-3zIBtwMH4viBDtDF7nDgGOFS/mxu4qtfhimeyyGlK+RHJu26YaLhHrJf6NaEK5Gwxt8chNntJwslklR+66AErg==}
     peerDependencies:
       tailwindcss: '*'
     dependencies:
@@ -2049,8 +2049,8 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@iconify-json/heroicons@1.1.10:
-    resolution: {integrity: sha512-BQNQIQEL6QZ4FoPxJzLrTBAz7OHQezFFdEEl3gyDOZK8rawIIaPl7AtOZrvyOoSgtkU/Xp8V9pJ5JekdREEsQA==}
+  /@iconify-json/heroicons@1.1.11:
+    resolution: {integrity: sha512-Autw98FvUTmBCgb4CuKZ7iQQ2633YBCmcCbAbVNU9hAo6vms9uVcbtrAQt/qlB+qzNi52PV3DWDiRtJgmPeZIw==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
@@ -2722,18 +2722,19 @@ packages:
       - vue-tsc
     dev: true
 
-  /@nuxthq/ui@2.1.0(rollup@2.79.1)(ts-node@10.9.1)(vue@3.3.4)(webpack@5.84.1):
-    resolution: {integrity: sha512-7qux0r38kAE1lVFpFENkWIkkxvMAV4wOxCOKt1KlSHJXuuyufP20Ujduty+rptA1TmkVDdx2rxSS26heBe7/fg==}
+  /@nuxthq/ui@2.4.1(rollup@2.79.1)(ts-node@10.9.1)(vue@3.3.4)(webpack@5.84.1):
+    resolution: {integrity: sha512-9D094IqxUzNAN2SPfHyHFVHwZ+cKFQIy/23KYfvGInmA4s753lKXZxDWII/F/+N8GyRa35GnRqNHCxtVtobB8A==}
     engines: {node: '>=16.14.0'}
     dependencies:
-      '@egoist/tailwindcss-icons': 1.0.7(tailwindcss@3.3.2)
+      '@egoist/tailwindcss-icons': 1.1.0(tailwindcss@3.3.2)
       '@headlessui/vue': 1.7.10(vue@3.3.4)
-      '@iconify-json/heroicons': 1.1.10
-      '@nuxt/kit': 3.5.2(rollup@2.79.1)
+      '@iconify-json/heroicons': 1.1.11
+      '@nuxt/kit': 3.6.0(rollup@2.79.1)
       '@nuxtjs/color-mode': 3.2.0(rollup@2.79.1)
-      '@nuxtjs/tailwindcss': 6.7.0(rollup@2.79.1)(ts-node@10.9.1)(webpack@5.84.1)
+      '@nuxtjs/tailwindcss': 6.8.0(rollup@2.79.1)(ts-node@10.9.1)(webpack@5.84.1)
       '@popperjs/core': 2.11.8
       '@tailwindcss/aspect-ratio': 0.4.2(tailwindcss@3.3.2)
+      '@tailwindcss/container-queries': 0.1.1(tailwindcss@3.3.2)
       '@tailwindcss/forms': 0.5.3(tailwindcss@3.3.2)
       '@tailwindcss/typography': 0.5.9(tailwindcss@3.3.2)
       '@vueuse/core': 10.1.2(vue@3.3.4)
@@ -2826,8 +2827,8 @@ packages:
       - webpack
     dev: true
 
-  /@nuxtjs/tailwindcss@6.7.0(rollup@2.79.1)(ts-node@10.9.1)(webpack@5.84.1):
-    resolution: {integrity: sha512-Ixm4hWFKoM2bbtixJZ6/+bm1y/aZPefOkfED5zV4P3X/18HVJQfGD3icTHxDEc9hqRxMV0DVPwpBM13eo1yTlg==}
+  /@nuxtjs/tailwindcss@6.8.0(rollup@2.79.1)(ts-node@10.9.1)(webpack@5.84.1):
+    resolution: {integrity: sha512-jzuvD1nfA2BPnSbHtKK0aiI51ndMa7lNGL1iDEFuEPsltzilZ9ED7zOP6niGTrImg0n5Yt4GEJpixi6yWwp9Hw==}
     dependencies:
       '@nuxt/kit': 3.6.0(rollup@2.79.1)
       '@nuxt/postcss8': 1.1.3(webpack@5.84.1)
@@ -2837,14 +2838,14 @@ packages:
       colorette: 2.0.20
       cookie-es: 1.0.0
       defu: 6.1.2
-      destr: 1.2.2
+      destr: 2.0.0
       h3: 1.7.0
       iron-webcrypto: 0.7.0
       micromatch: 4.0.5
       pathe: 1.1.1
       postcss: 8.4.24
-      postcss-custom-properties: 13.1.5(postcss@8.4.24)
-      postcss-nesting: 11.2.2(postcss@8.4.24)
+      postcss-custom-properties: 13.2.0(postcss@8.4.24)
+      postcss-nesting: 11.3.0(postcss@8.4.24)
       radix3: 1.0.1
       tailwind-config-viewer: 1.7.2(tailwindcss@3.3.2)
       tailwindcss: 3.3.2(ts-node@10.9.1)
@@ -3141,6 +3142,14 @@ packages:
     resolution: {integrity: sha512-8QPrypskfBa7QIMuKHg2TA7BqES6vhBrDLOv8Unb6FcFyd3TjKbc6lcmb9UPQHxfl24sXoJ41ux/H7qQQvfaSQ==}
     peerDependencies:
       tailwindcss: '>=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1'
+    dependencies:
+      tailwindcss: 3.3.2(ts-node@10.9.1)
+    dev: true
+
+  /@tailwindcss/container-queries@0.1.1(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-p18dswChx6WnTSaJCSGx6lTmrGzNNvm2FtXmiO6AuA1V4U5REyoqwmT6kgAsIMdjo07QdAfYXHJ4hnMtfHzWgA==}
+    peerDependencies:
+      tailwindcss: '>=3.2.0'
     dependencies:
       tailwindcss: 3.3.2(ts-node@10.9.1)
     dev: true
@@ -10054,8 +10063,8 @@ packages:
       postcss-value-parser: 4.2.0
     dev: true
 
-  /postcss-custom-properties@13.1.5(postcss@8.4.24):
-    resolution: {integrity: sha512-98DXk81zTGqMVkGANysMHbGIg3voH383DYo3/+c+Abzay3nao+vM/f4Jgzsakk9S7BDsEw5DiW7sFy5G4W2wLA==}
+  /postcss-custom-properties@13.2.0(postcss@8.4.24):
+    resolution: {integrity: sha512-UYiPqbqmVayyv56y0mtGhvUKZClflwE9cTTmPaqEX8fOVjVwsotqKGYtJXSLxrJLwf9tt7ka+Luyh1ZAOhGHWA==}
     engines: {node: ^14 || ^16 || >=18}
     peerDependencies:
       postcss: ^8.4
@@ -10310,8 +10319,8 @@ packages:
       postcss-selector-parser: 6.0.13
     dev: true
 
-  /postcss-nesting@11.2.2(postcss@8.4.24):
-    resolution: {integrity: sha512-aOTiUniAB1bcPE6GGiynWRa6PZFPhOTAm5q3q5cem6QeSijIHHkWr6gs65ukCZMXeak8yXeZVbBJET3VM+HlhA==}
+  /postcss-nesting@11.3.0(postcss@8.4.24):
+    resolution: {integrity: sha512-JlS10AQm/RzyrUGgl5irVkAlZYTJ99mNueUl+Qab+TcHhVedLiylWVkKBhRale+rS9yWIJK48JVzQlq3LcSdeA==}
     engines: {node: ^14 || ^16 || >=18}
     peerDependencies:
       postcss: ^8.4
