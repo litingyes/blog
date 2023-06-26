@@ -48,7 +48,7 @@
     "nuxt-simple-sitemap": "^2.6.1",
     "pinia": "^2.1.4",
     "reading-time": "^1.5.0",
-    "sass": "^1.62.1",
+    "sass": "^1.63.6",
     "simple-git-hooks": "^2.8.1",
     "stylelint": "^15.9.0",
     "stylelint-config-recommended-scss": "^12.0.0",
