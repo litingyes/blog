@@ -51,8 +51,8 @@ devDependencies:
     specifier: ^0.53.4
     version: 0.53.4(postcss@8.4.24)(rollup@2.79.1)(vite@4.3.9)(webpack@5.84.1)
   '@unocss/reset':
-    specifier: ^0.53.3
-    version: 0.53.3
+    specifier: ^0.53.4
+    version: 0.53.4
   '@vite-pwa/nuxt':
     specifier: ^0.1.0
     version: 0.1.0(@nuxt/kit@3.6.0)(vite-plugin-pwa@0.16.3)
@@ -3836,10 +3836,6 @@ packages:
     dependencies:
       '@unocss/core': 0.53.4
       '@unocss/preset-mini': 0.53.4
-    dev: true
-
-  /@unocss/reset@0.53.3:
-    resolution: {integrity: sha512-DilchevgPVH7Kiiwg/yU8xV6admL/FeV1rwf5sFBEd4THiQSasQXYiqE0e9RyOAF4bJA4c3ZGE9x0cb8T37Fwg==}
     dev: true
 
   /@unocss/reset@0.53.4:
