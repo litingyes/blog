@@ -114,6 +114,24 @@ export default defineNuxtConfig({
             name: 'page',
             mode: 'out-in',
         },
+        head: {
+            link: [
+                {
+                    rel: 'stylesheet',
+                    href: 'https://unpkg.com/lightgallery@v2/css/lightgallery-bundle.css',
+                },
+            ],
+            script: [
+                {
+                    src: 'https://unpkg.com/lightgallery@v2/lightgallery.min.js',
+                    tagPosition: 'bodyClose',
+                },
+                {
+                    src: '/utils/lightGallery.js',
+                    tagPosition: 'bodyClose',
+                },
+            ],
+        },
     },
     sourcemap: {
         client: false,

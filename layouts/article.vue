@@ -1,5 +1,10 @@
 <script setup lang="ts">
+// @ts-expect-error no type file
+import { Waline } from '@waline/client/component'
+import '@waline/client/dist/waline.css'
+
 const router = useRouter()
+const route = useRoute()
 const nextHashStore = useNextHash()
 
 function scrollSmooth(id: string) {
@@ -18,29 +23,41 @@ const { y } = useScroll(contentContainerRef, {
     router.replace({ hash: nextHashStore.nextHash })
   },
 })
-const displayUpArrow = computed(() => (y.value >= 400))
+const displayUpArrow = computed(() => y.value >= 400)
 function scrollToTop() {
   nextHashStore.setNextHash('')
   y.value = 0
 }
 
 const dayjs = useDayjs()
+
+const walineLocale = {
+  level0: '人世间',
+  level1: '逍遥游',
+  level2: '养生主',
+  level3: '羽化仙',
+}
 </script>
 
 <template>
   <div class="article-layout relative h-screen">
     <ContentDoc v-slot="{ doc }">
       <div class="absolute left-0 top-0 hidden w-48 sm:block" />
-      <div ref="contentContainerRef" class="absolute inset-0 h-full pt-16 scrollbar-primary md:pl-48 md:pr-64">
+      <div
+        ref="contentContainerRef"
+        class="absolute inset-0 h-full pt-16 scrollbar-primary md:pl-48 md:pr-64"
+      >
         <div class="mx-auto px-8 py-4 prose prose-slate dark:prose-invert">
-          <h1>{{ doc.title ?? '暂无标题' }}</h1>
+          <h1>{{ doc.title ?? "暂无标题" }}</h1>
           <p v-if="doc.description" class="text-slate-600 dark:text-slate-400">
             {{ doc.description }}
           </p>
-          <div class="flex flex-col text-slate-500 sm:flex-row sm:items-center sm:gap-4">
+          <div
+            class="flex flex-col text-slate-500 sm:flex-row sm:items-center sm:gap-4"
+          >
             <div v-if="doc.postDate" class="flex items-center gap-1">
               <span class="i-mdi:date-range" />
-              <span>{{ dayjs(doc.postDate).format('ddd YYYY-MM-DD') }}</span>
+              <span>{{ dayjs(doc.postDate).format("ddd YYYY-MM-DD") }}</span>
             </div>
             <div v-if="doc.totalCount" class="flex items-center gap-1">
               <span class="i-gridicons:stats" />
@@ -52,15 +69,28 @@ const dayjs = useDayjs()
             </div>
           </div>
           <ContentRenderer :value="doc" />
+          <Waline server-u-r-l="https://blog-comment-liting.vercel.app/" :path="route.path" :locale="walineLocale" />
         </div>
       </div>
-      <nav class="absolute bottom-0 right-0 top-16 hidden w-64 py-8 md:block scrollbar-hidden">
-        <a v-for="link in doc?.body?.toc?.links" :key="link.id" class="block overflow-hidden text-ellipsis px-2 py-1 hover:font-bold hover:text-black dark:hover:text-white" :href="`#${link.id}`" @click.prevent="scrollSmooth(link.id)">
+      <nav
+        class="absolute bottom-0 right-0 top-16 hidden w-64 py-8 md:block scrollbar-hidden"
+      >
+        <a
+          v-for="link in doc?.body?.toc?.links"
+          :key="link.id"
+          class="block overflow-hidden text-ellipsis px-2 py-1 hover:font-bold hover:text-black dark:hover:text-white"
+          :href="`#${link.id}`"
+          @click.prevent="scrollSmooth(link.id)"
+        >
           <span class="link">{{ link.text }}</span>
         </a>
       </nav>
       <Transition name="slide">
-        <div v-show="displayUpArrow" class="fixed bottom-8 right-4 h-10 w-10 text-4xl md:right-72 btn-container" @click="scrollToTop">
+        <div
+          v-show="displayUpArrow"
+          class="fixed bottom-8 right-4 h-10 w-10 text-4xl md:right-72 btn-container"
+          @click="scrollToTop"
+        >
           <span class="i-mingcute:arrow-up-fill" />
         </div>
       </Transition>
@@ -71,7 +101,7 @@ const dayjs = useDayjs()
 <style lang="scss" scoped>
 .article-layout {
   .slide-enter-active,
-  .slide-leave-active  {
+  .slide-leave-active {
     transition: all 0.5s ease;
   }
 

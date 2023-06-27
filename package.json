@@ -35,6 +35,7 @@
     "@vite-pwa/nuxt": "^0.1.0",
     "@vueuse/core": "^10.1.2",
     "@vueuse/nuxt": "^10.2.0",
+    "@waline/client": "^2.15.5",
     "commitizen": "^4.3.0",
     "consola": "^3.1.0",
     "dayjs-nuxt": "^1.1.2",
@@ -67,7 +68,7 @@
     "commit-msg": "npx commitlint  --edit ''"
   },
   "lint-staged": {
-    "*.{ts,vue,json}": "eslint --fix --quiet",
+    "*.{js,ts,vue,json,yml}": "eslint --fix --quiet",
     "*.{css,scss}": "stylelint --fix --quiet"
   },
   "commitlint": {
