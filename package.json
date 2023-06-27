@@ -29,7 +29,7 @@
     "@nuxtjs/fontaine": "^0.4.0",
     "@nuxtjs/stylelint-module": "^5.1.0",
     "@pinia/nuxt": "^0.4.11",
-    "@unocss/eslint-config": "^0.53.3",
+    "@unocss/eslint-config": "^0.53.4",
     "@unocss/nuxt": "^0.53.4",
     "@unocss/reset": "^0.53.3",
     "@vite-pwa/nuxt": "^0.1.0",
