@@ -127,7 +127,7 @@ export default defineNuxtConfig({
                     tagPosition: 'bodyClose',
                 },
                 {
-                    src: './utils/lightGallery.js',
+                    src: '/scripts/lightGallery.js',
                     tagPosition: 'bodyClose',
                 },
             ],
