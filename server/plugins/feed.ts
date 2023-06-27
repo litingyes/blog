@@ -4,14 +4,17 @@ export default defineNitroPlugin((nitroApp) => {
   const articleContentMap = new Map<string, string>()
   const articles: ParsedArticle[] = []
 
+  // @ts-expect-error no hook
   nitroApp.hooks.hook('content:file:beforeParse', (file: ParsedArticle) => {
     articleContentMap.set(file._id, file.body)
   })
 
+  // @ts-expect-error no hook
   nitroApp.hooks.hook('content:file:afterParse', (file: ParsedArticle) => {
     articles.push(file)
   })
 
+  // @ts-expect-error no hook
   nitroApp.hooks.hook('feed:generate', async ({ feed }: NitroCtx) => {
     feed.options = {
       id: 'feed-rss',

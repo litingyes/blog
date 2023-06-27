@@ -1,6 +1,7 @@
 import readingTime from 'reading-time'
 
 export default defineNitroPlugin((nitroApp) => {
+  // @ts-expect-error no hook
   nitroApp.hooks.hook('content:file:beforeParse', (file) => {
     const content: string = file.body
     const frontMatter = content.match(/^---.*?---\r?\n/ms)
