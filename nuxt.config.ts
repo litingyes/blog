@@ -120,6 +120,16 @@ export default defineNuxtConfig({
                     rel: 'stylesheet',
                     href: 'https://unpkg.com/lightgallery@v2/css/lightgallery-bundle.css',
                 },
+                {
+                    rel: 'stylesheet',
+                    href: '/fonts/lxgw/result.css',
+                    as: 'font',
+                },
+                {
+                    rel: 'stylesheet',
+                    href: '/fonts/smiley/result.css',
+                    as: 'font',
+                },
             ],
             script: [
                 {
