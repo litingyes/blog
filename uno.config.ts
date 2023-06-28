@@ -39,7 +39,7 @@ export default defineConfig({
   },
   rules: [
     ['font-smiley', {
-      'font-family': 'SmileySans',
+      'font-family': 'Smiley Sans',
     }],
   ],
   shortcuts: {
