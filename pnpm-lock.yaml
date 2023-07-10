@@ -75,8 +75,8 @@ devDependencies:
     specifier: ^4.3.0
     version: 4.3.0
   consola:
-    specifier: ^3.2.2
-    version: 3.2.2
+    specifier: ^3.2.3
+    version: 3.2.3
   dayjs-nuxt:
     specifier: ^1.1.2
     version: 1.1.2(rollup@2.79.1)
@@ -2485,7 +2485,7 @@ packages:
     resolution: {integrity: sha512-3vv3Rbpf6NH7RRuy7PLVmpQCt8C9DgV4aTWLmTCdnWpmlNsX+0wQT8bA/ypqmh8zrJ6BXWztFM35WVESkNvDvQ==}
     dependencies:
       '@nuxt/kit': 3.6.0(rollup@2.79.1)
-      consola: 3.2.2
+      consola: 3.2.3
       defu: 6.1.2
       destr: 1.2.2
       detab: 3.0.2
@@ -5474,11 +5474,6 @@ packages:
 
   /consola@2.15.3:
     resolution: {integrity: sha512-9vAdYbHj6x2fLKC4+oPH0kFzY/orMZyG2Aj+kNylHxKGJ/Ed4dpNyAQYwJOdqO4zdM7XpVHmyejQDcQHrnuXbw==}
-    dev: true
-
-  /consola@3.2.2:
-    resolution: {integrity: sha512-r921u0vbF4lQsoIqYvSSER+yZLPQGijOHrYcWoCNVNBZmn/bRR+xT/DgerTze/nLD9TTGzdDa378TVhx7RDOYg==}
-    engines: {node: ^14.18.0 || >=16.10.0}
     dev: true
 
   /consola@3.2.3:
