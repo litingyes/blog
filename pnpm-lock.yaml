@@ -43,7 +43,7 @@ devDependencies:
     version: 0.4.1(rollup@2.79.1)
   '@nuxtjs/stylelint-module':
     specifier: ^5.1.0
-    version: 5.1.0(postcss@8.4.24)(rollup@2.79.1)(stylelint@15.10.2)(vite@4.3.9)(webpack@5.84.1)
+    version: 5.1.0(postcss@8.4.27)(rollup@2.79.1)(stylelint@15.10.2)(vite@4.3.9)(webpack@5.84.1)
   '@pinia/nuxt':
     specifier: ^0.4.11
     version: 0.4.11(rollup@2.79.1)(typescript@5.1.6)(vue@3.3.4)
@@ -55,10 +55,10 @@ devDependencies:
     version: 0.53.6(eslint@8.45.0)(typescript@5.1.6)
   '@unocss/nuxt':
     specifier: ^0.54.0
-    version: 0.54.0(postcss@8.4.24)(rollup@2.79.1)(vite@4.3.9)(webpack@5.84.1)
+    version: 0.54.0(postcss@8.4.27)(rollup@2.79.1)(vite@4.3.9)(webpack@5.84.1)
   '@unocss/reset':
-    specifier: ^0.53.6
-    version: 0.53.6
+    specifier: ^0.54.0
+    version: 0.54.0
   '@vite-pwa/nuxt':
     specifier: ^0.1.0
     version: 0.1.0(@nuxt/kit@3.6.5)(vite-plugin-pwa@0.16.3)
@@ -124,7 +124,7 @@ devDependencies:
     version: 15.10.2
   stylelint-config-recommended-scss:
     specifier: ^12.0.0
-    version: 12.0.0(postcss@8.4.24)(stylelint@15.10.2)
+    version: 12.0.0(postcss@8.4.27)(stylelint@15.10.2)
   stylelint-config-recommended-vue:
     specifier: ^1.5.0
     version: 1.5.0(postcss-html@1.5.0)(stylelint@15.10.2)
@@ -2975,7 +2975,7 @@ packages:
       - supports-color
     dev: true
 
-  /@nuxtjs/stylelint-module@5.1.0(postcss@8.4.24)(rollup@2.79.1)(stylelint@15.10.2)(vite@4.3.9)(webpack@5.84.1):
+  /@nuxtjs/stylelint-module@5.1.0(postcss@8.4.27)(rollup@2.79.1)(stylelint@15.10.2)(vite@4.3.9)(webpack@5.84.1):
     resolution: {integrity: sha512-zpWn5nJfFstBh7PUBjsBNu6rFCN2wtz3JyLGuEqCh4yo7orKclDM3S931E3kMD6Tszpvobhq1CMsgbcZL6K3aA==}
     peerDependencies:
       stylelint: '>=13'
@@ -2985,7 +2985,7 @@ packages:
       pathe: 1.1.0
       stylelint: 15.10.2
       stylelint-webpack-plugin: 4.1.1(stylelint@15.10.2)(webpack@5.84.1)
-      vite-plugin-stylelint: 4.3.0(postcss@8.4.24)(rollup@2.79.1)(stylelint@15.10.2)(vite@4.3.9)
+      vite-plugin-stylelint: 4.3.0(postcss@8.4.27)(rollup@2.79.1)(stylelint@15.10.2)(vite@4.3.9)
     transitivePeerDependencies:
       - '@types/stylelint'
       - postcss
@@ -3850,7 +3850,7 @@ packages:
       sirv: 2.0.3
     dev: true
 
-  /@unocss/nuxt@0.54.0(postcss@8.4.24)(rollup@2.79.1)(vite@4.3.9)(webpack@5.84.1):
+  /@unocss/nuxt@0.54.0(postcss@8.4.27)(rollup@2.79.1)(vite@4.3.9)(webpack@5.84.1):
     resolution: {integrity: sha512-GVxOpzj/7koPJyto62eAWJ/xJutJHlK4O05OyOEOfAu6PcnqIpaycy31B0HHdljzdZTZNLGgFK6W1ju4JLcGbw==}
     dependencies:
       '@nuxt/kit': 3.6.5(rollup@2.79.1)
@@ -3866,7 +3866,7 @@ packages:
       '@unocss/reset': 0.54.0
       '@unocss/vite': 0.54.0(rollup@2.79.1)(vite@4.3.9)
       '@unocss/webpack': 0.54.0(rollup@2.79.1)(webpack@5.84.1)
-      unocss: 0.54.0(@unocss/webpack@0.54.0)(postcss@8.4.24)(rollup@2.79.1)(vite@4.3.9)
+      unocss: 0.54.0(@unocss/webpack@0.54.0)(postcss@8.4.27)(rollup@2.79.1)(vite@4.3.9)
     transitivePeerDependencies:
       - postcss
       - rollup
@@ -3875,7 +3875,7 @@ packages:
       - webpack
     dev: true
 
-  /@unocss/postcss@0.54.0(postcss@8.4.24):
+  /@unocss/postcss@0.54.0(postcss@8.4.27):
     resolution: {integrity: sha512-t1PmIkp2Qa9F/9swfCVCXMuheQxd1ddrcvf0+d4fOckpFF8YhvOi+WfMoZW4YFwoCmG5pvDg4VYgKbDunGHhRg==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -3886,7 +3886,7 @@ packages:
       css-tree: 2.3.1
       fast-glob: 3.3.0
       magic-string: 0.30.1
-      postcss: 8.4.24
+      postcss: 8.4.27
     dev: true
 
   /@unocss/preset-attributify@0.54.0:
@@ -3951,10 +3951,6 @@ packages:
     dependencies:
       '@unocss/core': 0.54.0
       '@unocss/preset-mini': 0.54.0
-    dev: true
-
-  /@unocss/reset@0.53.6:
-    resolution: {integrity: sha512-WtZU0Q5Y9CHzitYPJ+ZGPUssVuDnRakmHETQ2EuBJgWZhgsmTECrpb78+tnJdFVowuYYQyV0CP6a07uwkFNm6g==}
     dev: true
 
   /@unocss/reset@0.54.0:
@@ -10304,8 +10300,8 @@ packages:
     dependencies:
       htmlparser2: 8.0.2
       js-tokens: 8.0.1
-      postcss: 8.4.24
-      postcss-safe-parser: 6.0.0(postcss@8.4.24)
+      postcss: 8.4.27
+      postcss-safe-parser: 6.0.0(postcss@8.4.27)
     dev: true
 
   /postcss-import-resolver@2.0.0:
@@ -10642,15 +10638,6 @@ packages:
     resolution: {integrity: sha512-HvExULSwLqHLgUy1rl3ANIqCsvMS0WHss2UOsXhXnQaZ9VCc2oBvIpXrl00IUFT5ZDITME0o6oiXeiHr2SAIfw==}
     dev: true
 
-  /postcss-safe-parser@6.0.0(postcss@8.4.24):
-    resolution: {integrity: sha512-FARHN8pwH+WiS2OPCxJI8FuRJpTVnn6ZNFiqAM2aeW2LwTHWWmWgIyKC6cUo0L8aeKiF/14MNvnpls6R2PBeMQ==}
-    engines: {node: '>=12.0'}
-    peerDependencies:
-      postcss: ^8.3.3
-    dependencies:
-      postcss: 8.4.24
-    dev: true
-
   /postcss-safe-parser@6.0.0(postcss@8.4.27):
     resolution: {integrity: sha512-FARHN8pwH+WiS2OPCxJI8FuRJpTVnn6ZNFiqAM2aeW2LwTHWWmWgIyKC6cUo0L8aeKiF/14MNvnpls6R2PBeMQ==}
     engines: {node: '>=12.0'}
@@ -10660,13 +10647,13 @@ packages:
       postcss: 8.4.27
     dev: true
 
-  /postcss-scss@4.0.6(postcss@8.4.24):
+  /postcss-scss@4.0.6(postcss@8.4.27):
     resolution: {integrity: sha512-rLDPhJY4z/i4nVFZ27j9GqLxj1pwxE80eAzUNRMXtcpipFYIeowerzBgG3yJhMtObGEXidtIgbUpQ3eLDsf5OQ==}
     engines: {node: '>=12.0'}
     peerDependencies:
       postcss: ^8.4.19
     dependencies:
-      postcss: 8.4.24
+      postcss: 8.4.27
     dev: true
 
   /postcss-selector-parser@6.0.10:
@@ -11940,7 +11927,7 @@ packages:
       stylelint: 15.10.2
     dev: true
 
-  /stylelint-config-recommended-scss@12.0.0(postcss@8.4.24)(stylelint@15.10.2):
+  /stylelint-config-recommended-scss@12.0.0(postcss@8.4.27)(stylelint@15.10.2):
     resolution: {integrity: sha512-5Bb2mlGy6WLa30oNeKpZvavv2lowJUsUJO25+OA68GFTemlwd1zbFsL7q0bReKipOSU3sG47hKneZ6Nd+ctrFA==}
     peerDependencies:
       postcss: ^8.3.3
@@ -11949,8 +11936,8 @@ packages:
       postcss:
         optional: true
     dependencies:
-      postcss: 8.4.24
-      postcss-scss: 4.0.6(postcss@8.4.24)
+      postcss: 8.4.27
+      postcss-scss: 4.0.6(postcss@8.4.27)
       stylelint: 15.10.2
       stylelint-config-recommended: 12.0.0(stylelint@15.10.2)
       stylelint-scss: 5.0.0(stylelint@15.10.2)
@@ -12791,10 +12778,10 @@ packages:
       unocss: '>= 0.31.13 < 1'
     dependencies:
       '@unocss/preset-mini': 0.31.17
-      unocss: 0.54.0(@unocss/webpack@0.54.0)(postcss@8.4.24)(rollup@2.79.1)(vite@4.3.9)
+      unocss: 0.54.0(@unocss/webpack@0.54.0)(postcss@8.4.27)(rollup@2.79.1)(vite@4.3.9)
     dev: true
 
-  /unocss@0.54.0(@unocss/webpack@0.54.0)(postcss@8.4.24)(rollup@2.79.1)(vite@4.3.9):
+  /unocss@0.54.0(@unocss/webpack@0.54.0)(postcss@8.4.27)(rollup@2.79.1)(vite@4.3.9):
     resolution: {integrity: sha512-SXjyQqt/MP1uW8mjEmQaSa0zd+QB3FwaGD/ityNlu+zNRx1D03BPP9ACbJDB1zZKx4aodMVSsHZ3TV5wsu+VRQ==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -12807,7 +12794,7 @@ packages:
       '@unocss/cli': 0.54.0(rollup@2.79.1)
       '@unocss/core': 0.54.0
       '@unocss/extractor-arbitrary-variants': 0.54.0
-      '@unocss/postcss': 0.54.0(postcss@8.4.24)
+      '@unocss/postcss': 0.54.0(postcss@8.4.27)
       '@unocss/preset-attributify': 0.54.0
       '@unocss/preset-icons': 0.54.0
       '@unocss/preset-mini': 0.54.0
@@ -13117,7 +13104,7 @@ packages:
       - supports-color
     dev: true
 
-  /vite-plugin-stylelint@4.3.0(postcss@8.4.24)(rollup@2.79.1)(stylelint@15.10.2)(vite@4.3.9):
+  /vite-plugin-stylelint@4.3.0(postcss@8.4.27)(rollup@2.79.1)(stylelint@15.10.2)(vite@4.3.9):
     resolution: {integrity: sha512-S8BONq5X8TndOFt+My4lkeHxVZvkDQRL++TV0nvnuYgOU/CvDddPPOT4V6go+ETzWK0NEtXqCGFnpkmm8c8Xcg==}
     engines: {node: '>=14.18'}
     peerDependencies:
@@ -13136,7 +13123,7 @@ packages:
     dependencies:
       '@rollup/pluginutils': 5.0.2(rollup@2.79.1)
       chokidar: 3.5.3
-      postcss: 8.4.24
+      postcss: 8.4.27
       rollup: 2.79.1
       stylelint: 15.10.2
       vite: 4.3.9(@types/node@20.2.5)(sass@1.64.1)
