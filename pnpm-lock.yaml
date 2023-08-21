@@ -18,8 +18,8 @@ devDependencies:
     specifier: ^17.7.1
     version: 17.7.1(commitizen@4.3.0)(inquirer@8.2.6)
   '@iconify/json':
-    specifier: ^2.2.101
-    version: 2.2.101
+    specifier: ^2.2.103
+    version: 2.2.103
   '@konghayao/cn-font-split':
     specifier: ^4.6.0
     version: 4.6.0
@@ -2295,8 +2295,8 @@ packages:
       '@iconify/types': 2.0.0
     dev: true
 
-  /@iconify/json@2.2.101:
-    resolution: {integrity: sha512-4otJXRpPYZPVY1IhDZSun8FI5Tk5BBlFYlq5Kl44e/DAG3MGS08fzGwqFUEcG5cbAWMhrQUIGHOhy3kkXxmcJw==}
+  /@iconify/json@2.2.103:
+    resolution: {integrity: sha512-Zkmo6l9/vEnwXVhrPh6LzDrUHjnM9R+nBH/4ozx6UodoWBFMnQvAlN9rq9IDT4YrY7UD2ghyPpfFl2l2GUyNOQ==}
     dependencies:
       '@iconify/types': 2.0.0
       pathe: 1.1.1
