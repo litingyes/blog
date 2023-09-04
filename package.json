@@ -34,7 +34,7 @@
     "@types/fs-extra": "^11.0.1",
     "@unocss/eslint-config": "^0.55.2",
     "@unocss/nuxt": "^0.55.3",
-    "@unocss/reset": "^0.55.2",
+    "@unocss/reset": "^0.55.6",
     "@vite-pwa/nuxt": "^0.1.0",
     "@vueuse/core": "^10.3.0",
     "@vueuse/nuxt": "^10.3.0",
