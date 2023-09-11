@@ -42,7 +42,7 @@
     "commitizen": "^4.3.0",
     "consola": "^3.2.3",
     "dayjs-nuxt": "^1.1.2",
-    "eslint": "^8.48.0",
+    "eslint": "^8.49.0",
     "fs-extra": "^11.1.1",
     "inquirer": "^8.2.6",
     "lint-staged": "^13.3.0",
