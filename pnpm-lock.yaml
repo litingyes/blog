@@ -57,8 +57,8 @@ devDependencies:
     specifier: ^0.55.3
     version: 0.55.3(postcss@8.4.29)(rollup@2.79.1)(vite@4.4.9)(webpack@5.84.1)
   '@unocss/reset':
-    specifier: ^0.55.6
-    version: 0.55.6
+    specifier: ^0.55.7
+    version: 0.55.7
   '@vite-pwa/nuxt':
     specifier: ^0.1.0
     version: 0.1.0(@nuxt/kit@3.7.0)(vite-plugin-pwa@0.16.3)
@@ -4290,8 +4290,8 @@ packages:
     resolution: {integrity: sha512-zl3mogr3z6huA5CHZggOljoYFQDTidEw5T6pGPahfHB5qS9DH0UGozg5T9UtYWiidHL3xqyv6ZU27nyIMnlnhg==}
     dev: true
 
-  /@unocss/reset@0.55.6:
-    resolution: {integrity: sha512-EdeqkYGchGj7dlQ91WVRo75nLW58zWcg9rxppDHvcJXheZVgOllznBFV8SmA5fBtojMj8BEHz71dXe5CLJEDVw==}
+  /@unocss/reset@0.55.7:
+    resolution: {integrity: sha512-yvmLhxqUNgf6wue7IvhV/FdrQW9H9LF1Bmmhwwaiz2aV0E74aN4pbuYPZwNq3YafsQvNQ0UdtuXjddY4QMRCPw==}
     dev: true
 
   /@unocss/scope@0.55.3:
@@ -4454,7 +4454,7 @@ packages:
         optional: true
     dependencies:
       '@babel/types': 7.22.11
-      '@rollup/pluginutils': 5.0.3(rollup@2.79.1)
+      '@rollup/pluginutils': 5.0.4(rollup@2.79.1)
       '@vue/compiler-sfc': 3.3.4
       local-pkg: 0.4.3
       magic-string-ast: 0.1.2
