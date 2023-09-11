@@ -57,8 +57,8 @@ devDependencies:
     specifier: ^0.55.3
     version: 0.55.3(postcss@8.4.29)(rollup@2.79.1)(vite@4.4.9)(webpack@5.84.1)
   '@unocss/reset':
-    specifier: ^0.55.6
-    version: 0.55.6
+    specifier: ^0.55.7
+    version: 0.55.7
   '@vite-pwa/nuxt':
     specifier: ^0.1.0
     version: 0.1.0(@nuxt/kit@3.7.0)(vite-plugin-pwa@0.16.3)
@@ -2715,6 +2715,33 @@ packages:
       - supports-color
     dev: true
 
+  /@nuxt/kit@3.7.1(rollup@2.79.1):
+    resolution: {integrity: sha512-8k4q+92qLz5z7RdSOKrEJIjM63xXBg0z/WhTtZgXv1R5ULZ77usdTMjQYhQ+Kgd1NMkpIXeKaAO6903xrSt53Q==}
+    engines: {node: ^14.18.0 || >=16.10.0}
+    dependencies:
+      '@nuxt/schema': 3.7.1(rollup@2.79.1)
+      c12: 1.4.2
+      consola: 3.2.3
+      defu: 6.1.2
+      globby: 13.2.2
+      hash-sum: 2.0.0
+      ignore: 5.2.4
+      jiti: 1.19.3
+      knitwork: 1.0.0
+      mlly: 1.4.2
+      pathe: 1.1.1
+      pkg-types: 1.0.3
+      scule: 1.0.0
+      semver: 7.5.4
+      ufo: 1.3.0
+      unctx: 2.3.1
+      unimport: 3.3.0(rollup@2.79.1)
+      untyped: 1.4.0
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
+    dev: true
+
   /@nuxt/postcss8@1.1.3(webpack@5.84.1):
     resolution: {integrity: sha512-CdHtErhvQwueNZPBOmlAAKrNCK7aIpZDYhtS7TzXlSgPHHox1g3cSlf+Ke9oB/8t4mNNjdB+prclme2ibuCOEA==}
     dependencies:
@@ -2837,6 +2864,25 @@ packages:
       std-env: 3.4.3
       ufo: 1.3.0
       unimport: 3.2.0(rollup@2.79.1)
+      untyped: 1.4.0
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
+    dev: true
+
+  /@nuxt/schema@3.7.1(rollup@2.79.1):
+    resolution: {integrity: sha512-+0W/oos7Ktm3eTwQ/78PrcAObR0+yQzHIUzbQ7HgUnEEntRGVxp4hnfng5dmhvVjJqQvpuGZHa3yIS/g41vE6A==}
+    engines: {node: ^14.18.0 || >=16.10.0}
+    dependencies:
+      '@nuxt/ui-templates': 1.3.1
+      defu: 6.1.2
+      hookable: 5.5.3
+      pathe: 1.1.1
+      pkg-types: 1.0.3
+      postcss-import-resolver: 2.0.0
+      std-env: 3.4.3
+      ufo: 1.3.0
+      unimport: 3.3.0(rollup@2.79.1)
       untyped: 1.4.0
     transitivePeerDependencies:
       - rollup
@@ -3026,7 +3072,7 @@ packages:
   /@nuxtjs/mdc@0.1.6(rollup@2.79.1):
     resolution: {integrity: sha512-zJuq5KwU3d1Dlh1sudnpVtIFoap09ZrvO9IAM1iP4tipzSRkgHFbCOTMEmK17Rx7KSdmvBbFP+/4MBaJdj1NqQ==}
     dependencies:
-      '@nuxt/kit': 3.7.0(rollup@2.79.1)
+      '@nuxt/kit': 3.7.1(rollup@2.79.1)
       '@types/hast': 3.0.0
       '@types/mdast': 4.0.0
       '@vue/compiler-core': 3.3.4
@@ -4244,8 +4290,8 @@ packages:
     resolution: {integrity: sha512-zl3mogr3z6huA5CHZggOljoYFQDTidEw5T6pGPahfHB5qS9DH0UGozg5T9UtYWiidHL3xqyv6ZU27nyIMnlnhg==}
     dev: true
 
-  /@unocss/reset@0.55.6:
-    resolution: {integrity: sha512-EdeqkYGchGj7dlQ91WVRo75nLW58zWcg9rxppDHvcJXheZVgOllznBFV8SmA5fBtojMj8BEHz71dXe5CLJEDVw==}
+  /@unocss/reset@0.55.7:
+    resolution: {integrity: sha512-yvmLhxqUNgf6wue7IvhV/FdrQW9H9LF1Bmmhwwaiz2aV0E74aN4pbuYPZwNq3YafsQvNQ0UdtuXjddY4QMRCPw==}
     dev: true
 
   /@unocss/scope@0.55.3:
@@ -4408,7 +4454,7 @@ packages:
         optional: true
     dependencies:
       '@babel/types': 7.22.11
-      '@rollup/pluginutils': 5.0.3(rollup@2.79.1)
+      '@rollup/pluginutils': 5.0.4(rollup@2.79.1)
       '@vue/compiler-sfc': 3.3.4
       local-pkg: 0.4.3
       magic-string-ast: 0.1.2
@@ -10042,6 +10088,15 @@ packages:
       ufo: 1.3.0
     dev: true
 
+  /mlly@1.4.2:
+    resolution: {integrity: sha512-i/Ykufi2t1EZ6NaPLdfnZk2AX8cs0d+mTzVKuPfqPKPatxLApaBoxJQ9x1/uckXtrS/U5oisPMDkNs0yQTaBRg==}
+    dependencies:
+      acorn: 8.10.0
+      pathe: 1.1.1
+      pkg-types: 1.0.3
+      ufo: 1.3.0
+    dev: true
+
   /mri@1.2.0:
     resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
     engines: {node: '>=4'}
@@ -13394,6 +13449,24 @@ packages:
       local-pkg: 0.4.3
       magic-string: 0.30.3
       mlly: 1.4.1
+      pathe: 1.1.1
+      pkg-types: 1.0.3
+      scule: 1.0.0
+      strip-literal: 1.3.0
+      unplugin: 1.4.0
+    transitivePeerDependencies:
+      - rollup
+    dev: true
+
+  /unimport@3.3.0(rollup@2.79.1):
+    resolution: {integrity: sha512-3jhq3ZG5hFZzrWGDCpx83kjPzefP/EeuKkIO1T0MA4Zwj+dO/Og1mFvZ4aZ5WSDm0FVbbdVIRH1zKBG7c4wOpg==}
+    dependencies:
+      '@rollup/pluginutils': 5.0.4(rollup@2.79.1)
+      escape-string-regexp: 5.0.0
+      fast-glob: 3.3.1
+      local-pkg: 0.4.3
+      magic-string: 0.30.3
+      mlly: 1.4.2
       pathe: 1.1.1
       pkg-types: 1.0.3
       scule: 1.0.0
