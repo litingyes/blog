@@ -60,8 +60,8 @@ devDependencies:
     specifier: ^0.55.7
     version: 0.55.7
   '@vite-pwa/nuxt':
-    specifier: ^0.1.0
-    version: 0.1.0(@nuxt/kit@3.7.1)(vite-plugin-pwa@0.16.3)
+    specifier: ^0.1.1
+    version: 0.1.1(@nuxt/kit@3.7.1)(vite-plugin-pwa@0.16.5)
   '@vueuse/core':
     specifier: ^10.4.1
     version: 10.4.1(vue@3.3.4)
@@ -4330,14 +4330,14 @@ packages:
       - supports-color
     dev: true
 
-  /@vite-pwa/nuxt@0.1.0(@nuxt/kit@3.7.1)(vite-plugin-pwa@0.16.3):
-    resolution: {integrity: sha512-w6wm/0Y9yIqo6UTj9LeQUMR+xuRTf2sRdUTffu03SbRyWBzF7SnQcTqTRkXQy+NK+XafZuIDDLC12VkhValg4g==}
+  /@vite-pwa/nuxt@0.1.1(@nuxt/kit@3.7.1)(vite-plugin-pwa@0.16.5):
+    resolution: {integrity: sha512-wrIeo8ATGc3Nny+MiK/KSklRer22TKrAlRnkqszdM2r+0mHQ3FDQQGZdt/MFu1V/F4TEcacrx2NiU/MYVRV86A==}
     peerDependencies:
       '@nuxt/kit': ^3.5.3
-      vite-plugin-pwa: '>=0.16.3 <1'
+      vite-plugin-pwa: '>=0.16.5 <1'
     dependencies:
       '@nuxt/kit': 3.7.1(rollup@2.79.1)
-      vite-plugin-pwa: 0.16.3(vite@4.4.9)(workbox-build@7.0.0)(workbox-window@7.0.0)
+      vite-plugin-pwa: 0.16.5(vite@4.4.9)(workbox-build@7.0.0)(workbox-window@7.0.0)
     dev: true
 
   /@vitejs/plugin-vue-jsx@3.0.2(vite@4.4.9)(vue@3.3.4):
@@ -13891,8 +13891,8 @@ packages:
       vite: 4.4.9(@types/node@20.4.7)(sass@1.66.1)
     dev: true
 
-  /vite-plugin-pwa@0.16.3(vite@4.4.9)(workbox-build@7.0.0)(workbox-window@7.0.0):
-    resolution: {integrity: sha512-eYt++n1dneEo5cChJ7Rg6ZWJG8Xr9I5EzQss5m3zgMOmfHRH83E5W+jhaoLqlSCu/8g4msy9a4iZOxAmhL4HAQ==}
+  /vite-plugin-pwa@0.16.5(vite@4.4.9)(workbox-build@7.0.0)(workbox-window@7.0.0):
+    resolution: {integrity: sha512-Ahol4dwhMP2UHPQXkllSlXbihOaDFnvBIDPmAxoSZ1EObBUJGP4CMRyCyAVkIHjd6/H+//vH0DM2ON+XxHr81g==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       vite: ^3.1.0 || ^4.0.0
