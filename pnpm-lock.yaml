@@ -18,8 +18,8 @@ devDependencies:
     specifier: ^17.7.1
     version: 17.7.1(commitizen@4.3.0)(inquirer@8.2.6)
   '@iconify/json':
-    specifier: ^2.2.110
-    version: 2.2.110
+    specifier: ^2.2.116
+    version: 2.2.116
   '@konghayao/cn-font-split':
     specifier: ^4.7.2
     version: 4.7.2
@@ -61,7 +61,7 @@ devDependencies:
     version: 0.55.7
   '@vite-pwa/nuxt':
     specifier: ^0.1.1
-    version: 0.1.1(@nuxt/kit@3.7.1)(vite-plugin-pwa@0.16.5)
+    version: 0.1.1(@nuxt/kit@3.7.3)(vite-plugin-pwa@0.16.5)
   '@vueuse/core':
     specifier: ^10.4.1
     version: 10.4.1(vue@3.3.4)
@@ -2279,8 +2279,8 @@ packages:
       '@iconify/types': 2.0.0
     dev: true
 
-  /@iconify/json@2.2.110:
-    resolution: {integrity: sha512-S7aKdBkVyAVOlxy/DD91NoGR/dAjpyLjEPYjaC+Ff2tkd7pzQnylNoR4h+K+N9su+fLUpD1XrKyw/oIYEyBfOg==}
+  /@iconify/json@2.2.116:
+    resolution: {integrity: sha512-CdvzR/yg3dYENV7F6Hi85ubpEWe0noUspNyLkhyyNihs4hrhCj0iJ0q2T9FB3qeJyxFxL6v//Wy7H4pR/CCZFA==}
     dependencies:
       '@iconify/types': 2.0.0
       pathe: 1.1.1
@@ -2780,7 +2780,7 @@ packages:
       create-require: 1.1.1
       defu: 6.1.2
       hookable: 5.5.3
-      jiti: 1.19.3
+      jiti: 1.20.0
       pathe: 1.1.1
       pkg-types: 1.0.3
       postcss-import-resolver: 2.0.0
@@ -4412,13 +4412,13 @@ packages:
       - supports-color
     dev: true
 
-  /@vite-pwa/nuxt@0.1.1(@nuxt/kit@3.7.1)(vite-plugin-pwa@0.16.5):
+  /@vite-pwa/nuxt@0.1.1(@nuxt/kit@3.7.3)(vite-plugin-pwa@0.16.5):
     resolution: {integrity: sha512-wrIeo8ATGc3Nny+MiK/KSklRer22TKrAlRnkqszdM2r+0mHQ3FDQQGZdt/MFu1V/F4TEcacrx2NiU/MYVRV86A==}
     peerDependencies:
       '@nuxt/kit': ^3.5.3
       vite-plugin-pwa: '>=0.16.5 <1'
     dependencies:
-      '@nuxt/kit': 3.7.1(rollup@2.79.1)
+      '@nuxt/kit': 3.7.3(rollup@2.79.1)
       vite-plugin-pwa: 0.16.5(vite@4.4.9)(workbox-build@7.0.0)(workbox-window@7.0.0)
     dev: true
 
