@@ -69,8 +69,8 @@ devDependencies:
     specifier: ^10.4.1
     version: 10.4.1(nuxt@3.7.1)(rollup@2.79.1)(vue@3.3.4)
   '@waline/client':
-    specifier: ^2.15.7
-    version: 2.15.7
+    specifier: ^2.15.8
+    version: 2.15.8
   commitizen:
     specifier: ^4.3.0
     version: 4.3.0
@@ -4764,8 +4764,8 @@ packages:
       - vue
     dev: true
 
-  /@waline/client@2.15.7:
-    resolution: {integrity: sha512-dQU0MZ+cMTBV0eIwIXCCptDZISEXaY61iRm+EAeQlZ6HpGLeZLaMf9N3EGz6qDNHQ/SNnWZ8MFB14/+2m0RZ7Q==}
+  /@waline/client@2.15.8:
+    resolution: {integrity: sha512-EBL7RXJUJs742miTvOU0Vt8NEmeJ63EN5TtSsYZfzjUdvEtlv+JsBbS5uiz3C9v5qV7Hz+XDZdc8nc13mG9vNQ==}
     engines: {node: '>=14'}
     dependencies:
       '@vueuse/core': 10.4.1(vue@3.3.4)
