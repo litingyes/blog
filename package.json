@@ -31,7 +31,7 @@
     "@nuxtjs/fontaine": "^0.4.1",
     "@nuxtjs/stylelint-module": "^5.1.0",
     "@pinia/nuxt": "^0.4.11",
-    "@types/fs-extra": "^11.0.1",
+    "@types/fs-extra": "^11.0.2",
     "@unocss/eslint-config": "^0.55.7",
     "@unocss/nuxt": "^0.55.7",
     "@unocss/reset": "^0.55.7",
