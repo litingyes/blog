@@ -15,8 +15,8 @@ devDependencies:
     specifier: ^17.7.0
     version: 17.7.0
   '@commitlint/cz-commitlint':
-    specifier: ^17.7.1
-    version: 17.7.1(commitizen@4.3.0)(inquirer@8.2.6)
+    specifier: ^17.7.2
+    version: 17.7.2(commitizen@4.3.0)(inquirer@8.2.6)
   '@iconify/json':
     specifier: ^2.2.122
     version: 2.2.122
@@ -1582,15 +1582,15 @@ packages:
       ajv: 8.12.0
     dev: true
 
-  /@commitlint/cz-commitlint@17.7.1(commitizen@4.3.0)(inquirer@8.2.6):
-    resolution: {integrity: sha512-6hxY9TNBrEFCL9EE0t59617TIZZDHwbieMbvfM9PLpC2SadYD+YnDb9yZoaSHq3pI10g6BFoiDzF6ADWOgNnpw==}
+  /@commitlint/cz-commitlint@17.7.2(commitizen@4.3.0)(inquirer@8.2.6):
+    resolution: {integrity: sha512-E5j4D8t4o4pGOoE56JOtkTCEXhZJguv8prX+XmdxTF4gYphSjDEb+EQ1xWfv98hxOdgvFJNQfLA/JbPjkfh7DA==}
     engines: {node: '>=v14'}
     peerDependencies:
       commitizen: ^4.0.3
       inquirer: ^8.0.0
     dependencies:
       '@commitlint/ensure': 17.6.7
-      '@commitlint/load': 17.7.1
+      '@commitlint/load': 17.7.2
       '@commitlint/types': 17.4.4
       chalk: 4.1.2
       commitizen: 4.3.0
@@ -6414,7 +6414,7 @@ packages:
       conventional-commit-types: 3.0.0
       lodash.map: 4.6.0
       longest: 2.0.1
-      word-wrap: 1.2.4
+      word-wrap: 1.2.5
     optionalDependencies:
       '@commitlint/load': 17.7.1
     transitivePeerDependencies:
@@ -14578,11 +14578,6 @@ packages:
     resolution: {integrity: sha512-eDMORYaPNZ4sQIuuYPDHdQvf4gyCF9rEEV/yPxGfwPkRodwEgiMUUXTx/dex+Me0wxx53S+NgUHaP7y3MGlDmg==}
     dependencies:
       string-width: 4.2.3
-    dev: true
-
-  /word-wrap@1.2.4:
-    resolution: {integrity: sha512-2V81OA4ugVo5pRo46hAoD2ivUJx8jXmWXfUkY4KFNw0hEptvN0QfH3K4nHiwzGeKl5rFKedV48QVoqYavy4YpA==}
-    engines: {node: '>=0.10.0'}
     dev: true
 
   /word-wrap@1.2.5:
