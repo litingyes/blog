@@ -78,8 +78,8 @@ devDependencies:
     specifier: ^3.2.3
     version: 3.2.3
   dayjs-nuxt:
-    specifier: ^1.1.2
-    version: 1.1.2(rollup@2.79.1)
+    specifier: ^1.2.3
+    version: 1.2.3(rollup@2.79.1)
   eslint:
     specifier: ^8.50.0
     version: 8.50.0
@@ -6487,18 +6487,19 @@ packages:
     engines: {node: '>= 12'}
     dev: true
 
-  /dayjs-nuxt@1.1.2(rollup@2.79.1):
-    resolution: {integrity: sha512-hYcAS7MLkfqU6lrUV12HUtckFE8OkqtIKIaII31zCTg+tH63DOy8yHat/TgkepgbjSmvYHH/uzXtub8oKYU5Gg==}
+  /dayjs-nuxt@1.2.3(rollup@2.79.1):
+    resolution: {integrity: sha512-Ps7Za13J6xER1CJqjxfZKeuWdvtAeAaUpw1BxcHecko8lMBjHh97aBeIoaCgZIuZn3yZAKX09xiFHccV5co5eQ==}
     dependencies:
-      '@nuxt/kit': 3.6.0(rollup@2.79.1)
-      dayjs: 1.11.8
+      '@nuxt/kit': 3.7.4(rollup@2.79.1)
+      dayjs: 1.11.10
+      pathe: 1.1.1
     transitivePeerDependencies:
       - rollup
       - supports-color
     dev: true
 
-  /dayjs@1.11.8:
-    resolution: {integrity: sha512-LcgxzFoWMEPO7ggRv1Y2N31hUf2R0Vj7fuy/m+Bg1K8rr+KAs1AEy4y9jd5DXe8pbHgX+srkHNS7TH6Q6ZhYeQ==}
+  /dayjs@1.11.10:
+    resolution: {integrity: sha512-vjAczensTgRcqDERK0SR2XMwsF/tSvnvlv6VcF2GIhg6Sx4yOIt/irsr1RDJsKiIyBzJDpCoXiWWq28MqH2cnQ==}
     dev: true
 
   /de-indent@1.0.2:
