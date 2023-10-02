@@ -41,7 +41,7 @@
     "@waline/client": "^2.15.8",
     "commitizen": "^4.3.0",
     "consola": "^3.2.3",
-    "dayjs-nuxt": "^1.1.2",
+    "dayjs-nuxt": "^1.2.3",
     "eslint": "^8.50.0",
     "fs-extra": "^11.1.1",
     "inquirer": "^8.2.6",
