@@ -27,8 +27,8 @@ devDependencies:
     specifier: ^2.8.5
     version: 2.8.5(rollup@2.79.1)(vue@3.3.4)
   '@nuxt/image-edge':
-    specifier: 1.0.0-rc.2-28257829.3628546
-    version: 1.0.0-rc.2-28257829.3628546(rollup@2.79.1)
+    specifier: 1.0.0-rc.2-28266507.41ef546
+    version: 1.0.0-rc.2-28266507.41ef546(rollup@2.79.1)
   '@nuxthq/ui':
     specifier: ^2.7.0
     version: 2.7.0(rollup@2.79.1)(ts-node@10.9.1)(vue@3.3.4)(webpack@5.84.1)
@@ -2550,23 +2550,34 @@ packages:
     resolution: {integrity: sha512-GBzP8zOc7CGWyFQS6dv1lQz8VVpz5C2yRszbXufwG/9zhStTIH50EtD87NmWbTMwXDvZLNg8GIpb1UFdH93JCA==}
     dev: true
 
-  /@nuxt/image-edge@1.0.0-rc.2-28257829.3628546(rollup@2.79.1):
-    resolution: {integrity: sha512-iM18VbiVm+cKzgiNRJHSYiHh1MCWSXyTgbCU+jR3xPHo0vcUCn+yU5CX1nZbIL8HnfVyZjjDalOOsnJJ9Ubx3g==}
+  /@nuxt/image-edge@1.0.0-rc.2-28266507.41ef546(rollup@2.79.1):
+    resolution: {integrity: sha512-R3TeJ0nmNi7on4/kg06NftjndS9VSoOqhNYJFr7ZjC95UpmkfUYUtE7zrLNIKNZphFTTSVwP14Y/dh74B59rNw==}
     engines: {node: ^14.16.0 || >=16.11.0}
     dependencies:
-      '@nuxt/kit': 3.7.3(rollup@2.79.1)
+      '@nuxt/kit': 3.7.4(rollup@2.79.1)
       consola: 3.2.3
       defu: 6.1.2
-      h3: 1.8.1
+      h3: 1.8.2
       image-meta: 0.1.1
       node-fetch-native: 1.4.0
       ohash: 1.1.3
       pathe: 1.1.1
       std-env: 3.4.3
-      ufo: 1.3.0
+      ufo: 1.3.1
     optionalDependencies:
-      ipx: 1.3.0
+      ipx: 2.0.0-1
     transitivePeerDependencies:
+      - '@azure/app-configuration'
+      - '@azure/cosmos'
+      - '@azure/data-tables'
+      - '@azure/identity'
+      - '@azure/keyvault-secrets'
+      - '@azure/storage-blob'
+      - '@capacitor/preferences'
+      - '@planetscale/database'
+      - '@upstash/redis'
+      - '@vercel/kv'
+      - idb-keyval
       - rollup
       - supports-color
     dev: true
@@ -2703,33 +2714,6 @@ packages:
       - supports-color
     dev: true
 
-  /@nuxt/kit@3.7.3(rollup@2.79.1):
-    resolution: {integrity: sha512-bhP02i6CNti15Z4ix3LpR3fd1ANtTcpfS3CDSaCja24hDt3UxIasyp52mqD9LRC+OxrUVHJziB18EwUtS6RLDQ==}
-    engines: {node: ^14.18.0 || >=16.10.0}
-    dependencies:
-      '@nuxt/schema': 3.7.3(rollup@2.79.1)
-      c12: 1.4.2
-      consola: 3.2.3
-      defu: 6.1.2
-      globby: 13.2.2
-      hash-sum: 2.0.0
-      ignore: 5.2.4
-      jiti: 1.20.0
-      knitwork: 1.0.0
-      mlly: 1.4.2
-      pathe: 1.1.1
-      pkg-types: 1.0.3
-      scule: 1.0.0
-      semver: 7.5.4
-      ufo: 1.3.0
-      unctx: 2.3.1
-      unimport: 3.3.0(rollup@2.79.1)
-      untyped: 1.4.0
-    transitivePeerDependencies:
-      - rollup
-      - supports-color
-    dev: true
-
   /@nuxt/kit@3.7.4(rollup@2.79.1):
     resolution: {integrity: sha512-/S5abZL62BITCvC/TY3KWA6N721U1Osln3cQdBb56XHIeafZCBVqTi92Xb0o7ovl72mMRhrKwRu7elzvz9oT/g==}
     engines: {node: ^14.18.0 || >=16.10.0}
@@ -2786,7 +2770,7 @@ packages:
       postcss-import-resolver: 2.0.0
       scule: 1.0.0
       std-env: 3.4.3
-      ufo: 1.3.0
+      ufo: 1.3.1
       unimport: 3.3.0(rollup@2.79.1)
       untyped: 1.4.0
     transitivePeerDependencies:
@@ -2804,7 +2788,7 @@ packages:
       pkg-types: 1.0.3
       postcss-import-resolver: 2.0.0
       std-env: 3.4.3
-      ufo: 1.3.0
+      ufo: 1.3.1
       unimport: 3.3.0(rollup@2.79.1)
       untyped: 1.4.0
     transitivePeerDependencies:
@@ -2822,7 +2806,7 @@ packages:
       pkg-types: 1.0.3
       postcss-import-resolver: 2.0.0
       std-env: 3.4.3
-      ufo: 1.3.0
+      ufo: 1.3.1
       unimport: 3.3.0(rollup@2.79.1)
       untyped: 1.4.0
     transitivePeerDependencies:
@@ -2840,7 +2824,7 @@ packages:
       pkg-types: 1.0.3
       postcss-import-resolver: 2.0.0
       std-env: 3.4.3
-      ufo: 1.3.0
+      ufo: 1.3.1
       unimport: 3.3.0(rollup@2.79.1)
       untyped: 1.4.0
     transitivePeerDependencies:
@@ -2858,26 +2842,7 @@ packages:
       pkg-types: 1.0.3
       postcss-import-resolver: 2.0.0
       std-env: 3.4.3
-      ufo: 1.3.0
-      unimport: 3.3.0(rollup@2.79.1)
-      untyped: 1.4.0
-    transitivePeerDependencies:
-      - rollup
-      - supports-color
-    dev: true
-
-  /@nuxt/schema@3.7.3(rollup@2.79.1):
-    resolution: {integrity: sha512-Uqe3Z9RnAROzv5owQo//PztD9d4csKK6ulwQO1hIAinCh34X7z2zrv9lhm14hlRYU1n7ISEi4S7UeHgL/r8d8A==}
-    engines: {node: ^14.18.0 || >=16.10.0}
-    dependencies:
-      '@nuxt/ui-templates': 1.3.1
-      defu: 6.1.2
-      hookable: 5.5.3
-      pathe: 1.1.1
-      pkg-types: 1.0.3
-      postcss-import-resolver: 2.0.0
-      std-env: 3.4.3
-      ufo: 1.3.0
+      ufo: 1.3.1
       unimport: 3.3.0(rollup@2.79.1)
       untyped: 1.4.0
     transitivePeerDependencies:
@@ -2970,7 +2935,7 @@ packages:
       rollup-plugin-visualizer: 5.9.2(rollup@2.79.1)
       std-env: 3.4.3
       strip-literal: 1.3.0
-      ufo: 1.3.0
+      ufo: 1.3.1
       unplugin: 1.5.0
       vite: 4.4.9(@types/node@20.5.1)(sass@1.68.0)
       vite-node: 0.33.0(@types/node@20.5.1)(sass@1.68.0)
@@ -3162,7 +3127,7 @@ packages:
       radix3: 1.1.0
       tailwind-config-viewer: 1.7.2(tailwindcss@3.3.3)
       tailwindcss: 3.3.3(ts-node@10.9.1)
-      ufo: 1.3.0
+      ufo: 1.3.1
       uncrypto: 0.1.3
     transitivePeerDependencies:
       - rollup
@@ -6238,12 +6203,6 @@ packages:
     hasBin: true
     dev: true
 
-  /cssfilter@0.0.10:
-    resolution: {integrity: sha512-FAaLDaplstoRsDR8XGYH51znUN0UY7nMc6Z9/fvE8EXGwvJE9hu7W2vHwx1+bd6gCYnln9nLbzxFTrcO9YQDZw==}
-    requiresBuild: true
-    dev: true
-    optional: true
-
   /cssnano-preset-default@6.0.1(postcss@8.4.31):
     resolution: {integrity: sha512-7VzyFZ5zEB1+l1nToKyrRkuaJIx0zi/1npjvZfbBwbtNTzhLtlvYraK/7/uqmX2Wb2aQtd983uuGw79jAjLSuQ==}
     engines: {node: ^14 || ^16 || >=18.0}
@@ -7421,7 +7380,7 @@ packages:
       enhanced-resolve: 5.14.1
       mlly: 1.4.2
       pathe: 1.1.1
-      ufo: 1.3.0
+      ufo: 1.3.1
     dev: true
 
   /fast-deep-equal@3.1.3:
@@ -7563,7 +7522,7 @@ packages:
       magic-regexp: 0.7.0
       magic-string: 0.30.3
       pathe: 1.1.1
-      ufo: 1.3.0
+      ufo: 1.3.1
       unplugin: 1.5.0
     transitivePeerDependencies:
       - encoding
@@ -7986,7 +7945,20 @@ packages:
       destr: 2.0.1
       iron-webcrypto: 0.8.2
       radix3: 1.1.0
-      ufo: 1.3.0
+      ufo: 1.3.1
+      uncrypto: 0.1.3
+      unenv: 1.7.4
+    dev: true
+
+  /h3@1.8.2:
+    resolution: {integrity: sha512-1Ca0orJJlCaiFY68BvzQtP2lKLk46kcLAxVM8JgYbtm2cUg6IY7pjpYgWMwUvDO9QI30N5JAukOKoT8KD3Q0PQ==}
+    dependencies:
+      cookie-es: 1.0.0
+      defu: 6.1.2
+      destr: 2.0.1
+      iron-webcrypto: 0.10.1
+      radix3: 1.1.0
+      ufo: 1.3.1
       uncrypto: 0.1.3
       unenv: 1.7.4
     dev: true
@@ -8486,25 +8458,44 @@ packages:
       - supports-color
     dev: true
 
-  /ipx@1.3.0:
-    resolution: {integrity: sha512-Jfu+zQ0NGZwSeZ11CGMOnqWFlIyVcT8dW48e5UxKnMjQXXDy8VLTl8FIP7vRIJ9hd3ZPaJ/RIXXLJfZmBqRXWQ==}
+  /ipx@2.0.0-1:
+    resolution: {integrity: sha512-aAQ0sB1c2y77Zu72q+rV+wriTF4e1fKnoRClo5LRgmxWSV2HSXqHk+N+ly76EjRr6Zgk44aN2ikMzs9ISJH2Iw==}
     hasBin: true
     requiresBuild: true
     dependencies:
       '@fastify/accept-negotiator': 1.1.0
+      citty: 0.1.4
       consola: 3.2.3
       defu: 6.1.2
       destr: 2.0.1
       etag: 1.8.1
+      h3: 1.8.2
       image-meta: 0.1.1
-      listhen: 1.5.3
-      node-fetch-native: 1.4.0
+      listhen: 1.5.5
+      ofetch: 1.3.3
       pathe: 1.1.1
-      sharp: 0.32.5
-      ufo: 1.3.0
-      xss: 1.0.14
+      sharp: 0.32.6
+      ufo: 1.3.1
+      unstorage: 1.9.0
+    transitivePeerDependencies:
+      - '@azure/app-configuration'
+      - '@azure/cosmos'
+      - '@azure/data-tables'
+      - '@azure/identity'
+      - '@azure/keyvault-secrets'
+      - '@azure/storage-blob'
+      - '@capacitor/preferences'
+      - '@planetscale/database'
+      - '@upstash/redis'
+      - '@vercel/kv'
+      - idb-keyval
+      - supports-color
     dev: true
     optional: true
+
+  /iron-webcrypto@0.10.1:
+    resolution: {integrity: sha512-QGOS8MRMnj/UiOa+aMIgfyHcvkhqNUsUxb1XzskENvbo+rEfp6TOwqd1KPuDzXC4OnGHcMSVxDGRoilqB8ViqA==}
+    dev: true
 
   /iron-webcrypto@0.7.0:
     resolution: {integrity: sha512-WkX32iTcwd79ZsWRPP5wq1Jq6XXfPwO783ZiUBY8uMw4/AByx5WvBmxvYGnpVt6AOVJ0F41Qo420r8lIneT9Wg==}
@@ -9157,29 +9148,6 @@ packages:
       - supports-color
     dev: true
 
-  /listhen@1.5.3:
-    resolution: {integrity: sha512-5SitrZRCH4XXHvKSAqwaLURfQ6ZS/BCv+kpPkage5PhSnQPlz5HIVROCEIcMw8YvIF8NhDUAj/HAI/OovJGEpQ==}
-    hasBin: true
-    dependencies:
-      '@parcel/watcher': 2.3.0
-      '@parcel/watcher-wasm': 2.3.0
-      citty: 0.1.4
-      clipboardy: 3.0.0
-      consola: 3.2.3
-      defu: 6.1.2
-      get-port-please: 3.1.1
-      h3: 1.8.1
-      http-shutdown: 1.2.2
-      jiti: 1.20.0
-      mlly: 1.4.2
-      node-forge: 1.3.1
-      pathe: 1.1.1
-      std-env: 3.4.3
-      ufo: 1.3.0
-      untun: 0.1.2
-      uqr: 0.1.2
-    dev: true
-
   /listhen@1.5.5:
     resolution: {integrity: sha512-LXe8Xlyh3gnxdv4tSjTjscD1vpr/2PRpzq8YIaMJgyKzRG8wdISlWVWnGThJfHnlJ6hmLt2wq1yeeix0TEbuoA==}
     hasBin: true
@@ -9407,7 +9375,7 @@ packages:
       magic-string: 0.30.3
       mlly: 1.4.2
       type-level-regexp: 0.1.17
-      ufo: 1.3.0
+      ufo: 1.3.1
       unplugin: 1.5.0
     dev: true
 
@@ -10487,7 +10455,7 @@ packages:
       jiti: 1.20.0
       klona: 2.0.6
       knitwork: 1.0.0
-      listhen: 1.5.3
+      listhen: 1.5.5
       magic-string: 0.30.3
       mime: 3.0.0
       mlly: 1.4.2
@@ -10508,7 +10476,7 @@ packages:
       serve-placeholder: 2.0.1
       serve-static: 1.15.0
       std-env: 3.4.3
-      ufo: 1.3.0
+      ufo: 1.3.1
       uncrypto: 0.1.3
       unctx: 2.3.1
       unenv: 1.7.4
@@ -10822,7 +10790,7 @@ packages:
       citty: 0.1.4
       execa: 8.0.1
       pathe: 1.1.1
-      ufo: 1.3.0
+      ufo: 1.3.1
     dev: true
 
   /object-assign@4.1.1:
@@ -12518,8 +12486,8 @@ packages:
     resolution: {integrity: sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==}
     dev: true
 
-  /sharp@0.32.5:
-    resolution: {integrity: sha512-0dap3iysgDkNaPOaOL4X/0akdu0ma62GcdC2NBQ+93eqpePdDdr2/LM0sFdDSMmN7yS+odyZtPsb7tx/cYBKnQ==}
+  /sharp@0.32.6:
+    resolution: {integrity: sha512-KyLTWwgcR9Oe4d9HwCwNM2l7+J0dUQwn/yf7S0EnTtb0eVS4RxO0eUSvxPtzT4F3SY+C4K6fqdv/DO27sJ/v/w==}
     engines: {node: '>=14.15.0'}
     requiresBuild: true
     dependencies:
@@ -14340,7 +14308,7 @@ packages:
   /vue-bundle-renderer@2.0.0:
     resolution: {integrity: sha512-oYATTQyh8XVkUWe2kaKxhxKVuuzK2Qcehe+yr3bGiaQAhK3ry2kYE4FWOfL+KO3hVFwCdLmzDQTzYhTi9C+R2A==}
     dependencies:
-      ufo: 1.3.0
+      ufo: 1.3.1
     dev: true
 
   /vue-demi@0.14.5(vue@3.3.4):
@@ -14787,17 +14755,6 @@ packages:
     resolution: {integrity: sha512-QKxVRxiRACQcVuQEYFsI1hhkrMlrXHPegbbd1yn9UHOmRxY+si12nQYzri3vbzt8VdTTRviqcKxcyllFas5z2A==}
     engines: {node: '>=0.4.0'}
     dev: true
-
-  /xss@1.0.14:
-    resolution: {integrity: sha512-og7TEJhXvn1a7kzZGQ7ETjdQVS2UfZyTlsEdDOqvQF7GoxNfY+0YLCzBy1kPdsDDx4QuNAonQPddpsn6Xl/7sw==}
-    engines: {node: '>= 0.10.0'}
-    hasBin: true
-    requiresBuild: true
-    dependencies:
-      commander: 2.20.3
-      cssfilter: 0.0.10
-    dev: true
-    optional: true
 
   /xxhashjs@0.2.2:
     resolution: {integrity: sha512-AkTuIuVTET12tpsVIQo+ZU6f/qDmKuRUcjaqR+OIvm+aCBsZ95i7UVY5WJ9TMsSaZ0DA2WxoZ4acu0sPH+OKAw==}
