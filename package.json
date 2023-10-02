@@ -22,7 +22,7 @@
     "@commitlint/config-conventional": "^17.7.0",
     "@commitlint/cz-commitlint": "^17.7.1",
     "@iconify/json": "^2.2.122",
-    "@konghayao/cn-font-split": "^4.7.2",
+    "@konghayao/cn-font-split": "^4.8.0",
     "@nuxt/content": "^2.8.2",
     "@nuxt/image-edge": "1.0.0-rc.2-28257829.3628546",
     "@nuxthq/ui": "^2.7.0",
