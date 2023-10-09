@@ -36,7 +36,7 @@
     "@unocss/nuxt": "^0.56.4",
     "@unocss/reset": "^0.56.4",
     "@vite-pwa/nuxt": "^0.1.1",
-    "@vueuse/core": "^10.4.1",
+    "@vueuse/core": "^10.5.0",
     "@vueuse/nuxt": "^10.4.1",
     "@waline/client": "^2.15.8",
     "commitizen": "^4.3.0",
