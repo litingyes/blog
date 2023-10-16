@@ -19,7 +19,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.43.1",
     "@commitlint/cli": "^17.8.0",
-    "@commitlint/config-conventional": "^17.7.0",
+    "@commitlint/config-conventional": "^17.8.0",
     "@commitlint/cz-commitlint": "^17.8.0",
     "@iconify/json": "^2.2.125",
     "@konghayao/cn-font-split": "^4.9.0",
