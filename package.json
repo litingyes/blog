@@ -24,7 +24,7 @@
     "@iconify/json": "^2.2.128",
     "@konghayao/cn-font-split": "^4.9.0",
     "@nuxt/content": "^2.8.5",
-    "@nuxt/image-edge": "1.0.0-rc.3-28282346.a10323e",
+    "@nuxt/image-edge": "1.0.0-28299296.4360928",
     "@nuxthq/ui": "^2.7.0",
     "@nuxtjs/color-mode": "^3.3.0",
     "@nuxtjs/eslint-module": "^4.1.0",
