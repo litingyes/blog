@@ -12,8 +12,8 @@ devDependencies:
     specifier: ^17.8.0
     version: 17.8.0
   '@commitlint/config-conventional':
-    specifier: ^17.8.0
-    version: 17.8.0
+    specifier: ^17.8.1
+    version: 17.8.1
   '@commitlint/cz-commitlint':
     specifier: ^17.8.1
     version: 17.8.1(commitizen@4.3.0)(inquirer@8.2.6)
@@ -61,7 +61,7 @@ devDependencies:
     version: 0.56.5
   '@vite-pwa/nuxt':
     specifier: ^0.1.1
-    version: 0.1.1(@nuxt/kit@3.7.4)(vite-plugin-pwa@0.16.5)
+    version: 0.1.1(@nuxt/kit@3.8.0)(vite-plugin-pwa@0.16.5)
   '@vueuse/core':
     specifier: ^10.5.0
     version: 10.5.0(vue@3.3.4)
@@ -1598,8 +1598,8 @@ packages:
       - '@swc/wasm'
     dev: true
 
-  /@commitlint/config-conventional@17.8.0:
-    resolution: {integrity: sha512-MgiFXujmqAvi7M33C7OSMTznwrVkckrbXe/aZWQ/+KFGLLF6IE50XIcjGrW0/uiDGb/im5qbqF2dh1dCFNa+sQ==}
+  /@commitlint/config-conventional@17.8.1:
+    resolution: {integrity: sha512-NxCOHx1kgneig3VLauWJcDWS40DVjg7nKOpBEEK9E5fjJpQqLCilcnKkIIjdBH98kEO1q3NpE5NSrZ2kl/QGJg==}
     engines: {node: '>=v14'}
     dependencies:
       conventional-changelog-conventionalcommits: 6.1.0
@@ -2565,7 +2565,7 @@ packages:
       npmlog: 5.0.1
       rimraf: 3.0.2
       semver: 7.5.4
-      tar: 6.1.15
+      tar: 6.2.0
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -2900,7 +2900,7 @@ packages:
     resolution: {integrity: sha512-E8HWzU43rXzqwDTmWduTLHY4xIwRSAUt1LbpuE9IjZ4uJZq5Mbaj4nfhANNsTQGw2c+O+rL81yzAP3i61LEJDw==}
     engines: {node: ^14.18.0 || ^16.10.0 || ^17.0.0 || ^18.0.0 || ^19.0.0}
     dependencies:
-      c12: 1.4.2
+      c12: 1.5.1
       create-require: 1.1.1
       defu: 6.1.2
       hookable: 5.5.3
@@ -2911,7 +2911,7 @@ packages:
       scule: 1.0.0
       std-env: 3.4.3
       ufo: 1.3.1
-      unimport: 3.3.0(rollup@2.79.1)
+      unimport: 3.4.0(rollup@2.79.1)
       untyped: 1.4.0
     transitivePeerDependencies:
       - rollup
@@ -2929,7 +2929,7 @@ packages:
       postcss-import-resolver: 2.0.0
       std-env: 3.4.3
       ufo: 1.3.1
-      unimport: 3.3.0(rollup@2.79.1)
+      unimport: 3.4.0(rollup@2.79.1)
       untyped: 1.4.0
     transitivePeerDependencies:
       - rollup
@@ -2947,7 +2947,7 @@ packages:
       postcss-import-resolver: 2.0.0
       std-env: 3.4.3
       ufo: 1.3.1
-      unimport: 3.3.0(rollup@2.79.1)
+      unimport: 3.4.0(rollup@2.79.1)
       untyped: 1.4.0
     transitivePeerDependencies:
       - rollup
@@ -4691,13 +4691,13 @@ packages:
       - supports-color
     dev: true
 
-  /@vite-pwa/nuxt@0.1.1(@nuxt/kit@3.7.4)(vite-plugin-pwa@0.16.5):
+  /@vite-pwa/nuxt@0.1.1(@nuxt/kit@3.8.0)(vite-plugin-pwa@0.16.5):
     resolution: {integrity: sha512-wrIeo8ATGc3Nny+MiK/KSklRer22TKrAlRnkqszdM2r+0mHQ3FDQQGZdt/MFu1V/F4TEcacrx2NiU/MYVRV86A==}
     peerDependencies:
       '@nuxt/kit': ^3.5.3
       vite-plugin-pwa: '>=0.16.5 <1'
     dependencies:
-      '@nuxt/kit': 3.7.4(rollup@2.79.1)
+      '@nuxt/kit': 3.8.0(rollup@2.79.1)
       vite-plugin-pwa: 0.16.5(vite@4.4.9)(workbox-build@7.0.0)(workbox-window@7.0.0)
     dev: true
 
@@ -6474,7 +6474,7 @@ packages:
       longest: 2.0.1
       word-wrap: 1.2.5
     optionalDependencies:
-      '@commitlint/load': 17.8.0
+      '@commitlint/load': 17.8.1
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/wasm'
@@ -7903,7 +7903,7 @@ packages:
       mri: 1.2.0
       node-fetch-native: 1.4.0
       pathe: 1.1.1
-      tar: 6.1.15
+      tar: 6.2.0
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -13408,18 +13408,6 @@ packages:
       b4a: 1.6.4
       fast-fifo: 1.3.2
       streamx: 2.15.1
-    dev: true
-
-  /tar@6.1.15:
-    resolution: {integrity: sha512-/zKt9UyngnxIT/EAGYuxaMYgOIJiP81ab9ZfkILq4oNLPFX50qyYmu7jRj9qeXoxmJHjGlbH0+cm2uy1WCs10A==}
-    engines: {node: '>=10'}
-    dependencies:
-      chownr: 2.0.0
-      fs-minipass: 2.1.0
-      minipass: 5.0.0
-      minizlib: 2.1.2
-      mkdirp: 1.0.4
-      yallist: 4.0.0
     dev: true
 
   /tar@6.2.0:
