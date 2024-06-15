@@ -50,6 +50,12 @@
     "pcss",
     "postcss"
   ],
+
+  // tailwindcss
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+
   "cSpell.words": [
     "unocss"
   ]
