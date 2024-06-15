@@ -6,19 +6,26 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint .",
+    "format": "eslint . --fix"
   },
   "dependencies": {
+    "next": "14.2.4",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.4"
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@antfu/eslint-config": "^2.21.1",
+    "@eslint-react/eslint-plugin": "^1.5.15",
+    "@next/eslint-plugin-next": "^14.2.4",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@unocss/eslint-plugin": "^0.60.4",
     "eslint": "^8",
-    "eslint-config-next": "14.2.4"
+    "eslint-plugin-format": "^0.1.1",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "typescript": "^5"
   }
 }
