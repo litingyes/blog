@@ -7,7 +7,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "format": "eslint . --fix",
     "prepare": "husky"
   },
   "dependencies": {
@@ -17,6 +16,7 @@
     "@nextui-org/react": "^2.4.1",
     "framer-motion": "^11.2.10",
     "next": "14.2.4",
+    "next-themes": "0.3.0",
     "react": "^18",
     "react-dom": "^18"
   },
@@ -29,7 +29,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.4.19",
-    "eslint": "^8",
+    "eslint": "^9.5.0",
     "eslint-plugin-format": "^0.1.1",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
@@ -41,6 +41,6 @@
     "typescript": "^5"
   },
   "lint-staged": {
-    "*": "eslint --fix"
+    "*.{tsx,ts,jsx,js,html,css,md,json}": "eslint --fix"
   }
 }

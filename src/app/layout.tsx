@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { NextUIProvider } from '@nextui-org/react'
+import { ThemeProvider } from 'next-themes'
 import { Inter } from 'next/font/google'
 import './globals.css'
 
@@ -16,10 +17,12 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="zh-CN" suppressHydrationWarning>
       <body className={inter.className}>
         <NextUIProvider>
-          {children}
+          <ThemeProvider attribute="class" defaultTheme="dark">
+            {children}
+          </ThemeProvider>
         </NextUIProvider>
       </body>
     </html>

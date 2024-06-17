@@ -22,4 +22,9 @@ export default antfu(
       tailwind,
     ],
   },
+  {
+    rules: {
+      'style/indent': 0,
+    },
+  },
 )
