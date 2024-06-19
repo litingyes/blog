@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
-import { NextUIProvider } from '@nextui-org/react'
-import { ThemeProvider } from 'next-themes'
 import { Inter } from 'next/font/google'
+import { Providers } from './providers'
 import '@unocss/reset/normalize.css'
 import './globals.scss'
 import { LayoutHeader } from '@/components/layout'
@@ -21,14 +20,12 @@ export default function RootLayout({
   return (
     <html lang="zh-CN" suppressHydrationWarning>
       <body className={inter.className}>
-        <NextUIProvider>
-          <ThemeProvider attribute="class" defaultTheme="dark">
-            <LayoutHeader />
-            <main>
-              {children}
-            </main>
-          </ThemeProvider>
-        </NextUIProvider>
+        <Providers>
+          <LayoutHeader />
+          <main className="hover:bg-red-50">
+            {children}
+          </main>
+        </Providers>
       </body>
     </html>
   )
