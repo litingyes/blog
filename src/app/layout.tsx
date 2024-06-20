@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Providers>
           <LayoutHeader />
-          <main className="hover:bg-red-50">
+          <main>
             {children}
           </main>
         </Providers>

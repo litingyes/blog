@@ -32,10 +32,10 @@ export default function SwitchTheme() {
       <div
         {...getWrapperProps()}
         className={slots.wrapper({
-              class: [
-                'w-6 h-6 rounded-md flex items-center justify-center',
-              ],
-            })}
+          class: [
+            'w-6 h-6 rounded-md flex items-center justify-center',
+          ],
+        })}
       >
         {isSelected ? <SunIcon /> : <MoonIcon /> }
       </div>

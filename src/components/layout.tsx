@@ -8,8 +8,8 @@ export function LayoutHeader() {
     <Navbar shouldHideOnScroll>
       <NavbarBrand>
         <Link href="/" color="foreground">
-          <PenIcon className="w-8 h-8" />
-          <span className="font-bold ml-2">Liting's Blog</span>
+          <PenIcon className="size-8" />
+          <span className="ml-2 font-bold">Liting's Blog</span>
         </Link>
       </NavbarBrand>
       <NavbarContent justify="end">
@@ -18,7 +18,7 @@ export function LayoutHeader() {
         </NavbarItem>
         <NavbarItem className="h-6">
           <Link href="https://github.com/litingyes/blog.git" color="foreground" isExternal>
-            <GithubIcon className="w-6 h-6" />
+            <GithubIcon className="size-6" />
           </Link>
         </NavbarItem>
         <NavbarItem className="h-6">

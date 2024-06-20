@@ -31,6 +31,9 @@ export default antfu(
   ...compat.config(
     {
       extends: ['plugin:@next/next/recommended', 'plugin:tailwindcss/recommended'],
+      rules: {
+        '@next/next/no-duplicate-head': 0,
+      },
     },
   ),
 )
