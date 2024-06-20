@@ -1,6 +1,8 @@
 import antfu from '@antfu/eslint-config'
-import next from '@next/eslint-plugin-next'
-import tailwind from 'eslint-plugin-tailwindcss'
+import * as mdx from 'eslint-plugin-mdx'
+import { FlatCompat } from '@eslint/eslintrc'
+
+const compat = new FlatCompat()
 
 export default antfu(
   {
@@ -17,14 +19,17 @@ export default antfu(
     },
   },
   {
-    plugins: [
-      next,
-      tailwind,
-    ],
+    ...mdx.flat,
+    processor: mdx.createRemarkProcessor({
+      lintCodeBlocks: true,
+    }),
   },
   {
-    rules: {
-      'style/indent': 0,
-    },
+    ...mdx.flatCodeBlocks,
   },
+  ...compat.config(
+    {
+      extends: ['plugin:@next/next/recommended', 'plugin:tailwindcss/recommended'],
+    },
+  ),
 )
