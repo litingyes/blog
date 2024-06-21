@@ -1,5 +1,6 @@
 import type { MDXComponents } from 'mdx/types'
 import { MdxH1, MdxH2, MdxH3, MdxH4, MdxH5, MdxH6 } from '@/components/mdx/heading'
+import { MdxA } from '@/components/mdx/a'
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
@@ -9,6 +10,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     h4: MdxH4,
     h5: MdxH5,
     h6: MdxH6,
+    a: MdxA,
     ...components,
   }
 }
