@@ -1,0 +1,54 @@
+.shiki {
+  .line {
+    @apply inline-block px-6 text-base w-full;
+  }
+
+  &.has-diff {
+    .diff {
+      &.remove {
+        @apply relative bg-red-200 before:content-['-'] before:absolute before:left-2;
+      }
+      &.add {
+        @apply relative bg-green-200 before:content-['+'] before:absolute before:left-2;
+      }
+    }
+  }
+
+  .highlighted {
+    @apply bg-stone-100;
+
+    &.error {
+      @apply bg-red-300;
+    }
+    &.warning {
+      @apply bg-yellow-100;
+    }
+  }
+
+  .highlighted-word {
+    @apply border border-solid border-stone-200 rounded px-1;
+  }
+
+  &.has-focused {
+    .line:not(.focused) {
+      filter: blur(0.1rem);
+      opacity: 0.7;
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      .line:not(.focused) {
+        filter: none;
+        opacity: 1;
+      }
+    }
+  }
+
+  .tab {
+    @apply relative before:content-['⇥'] opacity-30 before:absolute;
+  }
+
+  .space {
+    @apply relative before:content-['.'] opacity-30 before:absolute;
+  }
+}
