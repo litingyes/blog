@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "prepare": "husky && playwright install"
+    "prepare": "husky && playwright install-deps"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.0.1",
