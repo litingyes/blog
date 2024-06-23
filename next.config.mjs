@@ -15,6 +15,7 @@ import {
 
 } from '@shikijs/transformers'
 import rehypeMermaid from 'rehype-mermaid'
+import { rehypePrune } from './plugins/rehypePrune.mjs'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -47,6 +48,7 @@ export default withMDX({
           ],
         },
       ],
+      rehypePrune,
     ],
   },
 })(nextConfig)
