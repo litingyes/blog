@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "prepare": "husky && playwright install --with-deps chromium "
+    "prepare": "husky && playwright-core install --with-deps chromium"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.0.1",
@@ -48,7 +48,7 @@
     "eslint-plugin-tailwindcss": "^3.17.3",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.7",
-    "playwright": "^1.44.1",
+    "playwright-core": "^1.45.0",
     "postcss": "^8.4.38",
     "sass": "^1.77.6",
     "tailwindcss": "^3.4.4",
