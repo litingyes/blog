@@ -1,0 +1,18 @@
+.blog-docs-layout {
+  &__heading-a {
+    opacity: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    &:hover {
+      & > .blog-docs-layout__heading-a {
+        opacity: 1;
+      }
+    }
+  }
+}

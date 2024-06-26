@@ -33,6 +33,9 @@ export default antfu(
       extends: ['plugin:@next/next/recommended', 'plugin:tailwindcss/recommended'],
       rules: {
         '@next/next/no-duplicate-head': 0,
+        'tailwindcss/no-custom-classname': [1, {
+          whitelist: ['^blog-.*'],
+        }],
       },
     },
   ),

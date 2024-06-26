@@ -12,7 +12,6 @@ import {
   transformerNotationHighlight,
   transformerNotationWordHighlight,
   transformerRenderWhitespace,
-
 } from '@shikijs/transformers'
 import { rehypePrune } from './plugins/rehypePrune.mjs'
 
