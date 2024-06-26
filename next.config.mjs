@@ -14,7 +14,6 @@ import {
   transformerRenderWhitespace,
 
 } from '@shikijs/transformers'
-import rehypeMermaid from 'rehype-mermaid'
 import { rehypePrune } from './plugins/rehypePrune.mjs'
 
 /** @type {import('next').NextConfig} */
@@ -26,9 +25,6 @@ export default withMDX({
   options: {
     remarkPlugins: [remarkFrontmatter, remarkMdxFrontmatter, remarkGfm],
     rehypePlugins: [
-      [rehypeMermaid, {
-        strategy: 'img-svg',
-      }],
       [
         rehypeShiki,
         {

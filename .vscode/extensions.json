@@ -2,7 +2,6 @@
   "recommendations": [
     "dbaeumer.vscode-eslint",
     "bradlc.vscode-tailwindcss",
-    "unifiedjs.vscode-mdx",
-    "bpruitt-goddard.mermaid-markdown-syntax-highlighting"
+    "unifiedjs.vscode-mdx"
   ]
 }
