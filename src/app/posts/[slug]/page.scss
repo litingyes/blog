@@ -1,4 +1,4 @@
-.blog-docs-layout {
+.post-layout {
   &__heading-a {
     opacity: 0;
   }
@@ -10,7 +10,7 @@
   h5,
   h6 {
     &:hover {
-      & > .blog-docs-layout__heading-a {
+      & > .post-layout__heading-a {
         opacity: 1;
       }
     }

@@ -2,7 +2,7 @@ import type { MDXComponents } from 'mdx/types'
 
 function HeadingA({ href }: { href: string }) {
   return (
-    <a className='blog-docs-layout__heading-a absolute top-1/2 ml-[-0.875em] -translate-y-1/2 !no-underline transition-all before:content-["#"] hover:!text-blue-500 hover:!underline' href={href} />
+    <a className='post-layout__heading-a absolute top-1/2 ml-[-0.875em] -translate-y-1/2 !no-underline transition-all before:content-["#"] hover:!text-blue-500 hover:!underline' href={href} />
   )
 }
 

@@ -34,7 +34,7 @@ export default antfu(
       rules: {
         '@next/next/no-duplicate-head': 0,
         'tailwindcss/no-custom-classname': [1, {
-          whitelist: ['^blog-.*'],
+          whitelist: ['^post-.*'],
         }],
       },
     },
