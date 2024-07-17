@@ -1,1 +1,4 @@
-*.mdx linguist-language=Markdown
+*.mdx linguist-detectable
+*.mdx linguist-documentation=false
+*.mdx linguist-generated=false
+*.mdx linguist-vendored=false
