@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Providers } from './providers'
-import { LayoutHeader } from '@/components/layout'
+import { LayoutHeader } from '@/components/layouts/header'
 
 import '@unocss/reset/normalize.css'
 import './globals.scss'
@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Providers>
           <LayoutHeader />
-          <main>
+          <main className="px-32 pt-20">
             {children}
           </main>
         </Providers>
