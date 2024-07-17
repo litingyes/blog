@@ -22,7 +22,7 @@ export function LayoutHeader() {
   const pathname = usePathname()
 
   return (
-    <div className="fixed left-1/2 top-6 -translate-x-1/2">
+    <div className="fixed z-50 flex w-screen items-center justify-center bg-white/30 py-4 backdrop-blur-sm">
       <Tabs selectedKey={pathname} size="sm">
         {tabs.map(tab => (
           <Tab
