@@ -3,6 +3,11 @@ import localizedFormat from 'dayjs/plugin/localizedFormat'
 
 dayjs.extend(localizedFormat)
 
-export const transformDateStringToTimestamp = (date: string) => dayjs(date, 'YYYY-MM-DD')
+export function transformDateStringToTimestamp(date: string) {
+  if (!date)
+    return 0
 
-export const transformDateStringToDisplayDate = (date: string) => transformDateStringToTimestamp(date).format('LL')
+  return dayjs(date, 'YYYY-MM-DD').valueOf()
+}
+
+export const transformDateStringToDisplayDate = (date: string) => dayjs(transformDateStringToTimestamp(date)).format('LL')

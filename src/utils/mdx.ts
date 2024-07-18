@@ -18,6 +18,7 @@ import {
 import { compileMDX } from 'next-mdx-remote/rsc'
 import { rehypePrune } from '@/plugins/rehypePrune.mjs'
 import { mdxComponents } from '@/components/mdx'
+import { transformDateStringToTimestamp } from '@/utils/date'
 
 const blogsDir = join(cwd(), 'docs')
 
@@ -70,5 +71,5 @@ export async function getMdxData(path: string) {
 }
 
 export async function getAllMdxData() {
-  return await Promise.all(getMdxPaths().map(path => getMdxData(path as string)))
+  return (await Promise.all(getMdxPaths().map(path => getMdxData(path as string)))).sort((a, b) => transformDateStringToTimestamp(a.frontmatter.lastUpdatedTime as string) > transformDateStringToTimestamp(b.frontmatter.lastUpdatedTime as string) ? -1 : 1)
 }
