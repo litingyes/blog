@@ -1,7 +1,7 @@
 import { Chip } from '@nextui-org/react'
 import Link from 'next/link'
 import { getAllMdxData } from '@/utils/mdx'
-import { transformPostDateToDisplayDate } from '@/utils/date'
+import { transformDateStringToDisplayDate } from '@/utils/date'
 import { IconDateRange } from '@/components/icons/dateRange'
 
 export default async function PostPage() {
@@ -17,7 +17,7 @@ export default async function PostPage() {
                 <i className="text-xl">
                   <IconDateRange />
                 </i>
-                <span>{transformPostDateToDisplayDate(post.frontmatter.lastUpdatedTime as string)}</span>
+                <span>{transformDateStringToDisplayDate(post.frontmatter.lastUpdatedTime as string)}</span>
               </div>
             </div>
             <div>
