@@ -41,7 +41,7 @@ export default async function AboutPage() {
             <ul className="mt-8">
               {SOCIALS.map(item => (
                 <li key={item.label}>
-                  <Link href={item.link} target="_blank" className="flex cursor-pointer items-center gap-2 text-xl  text-slate-600">
+                  <Link href={item.link} target="_blank" className="flex cursor-pointer items-center gap-2  text-slate-600">
                     <i className="text-2xl">{item.icon}</i>
                     {`follow on ${item.label}`}
                   </Link>
@@ -49,7 +49,7 @@ export default async function AboutPage() {
               ))}
             </ul>
           </div>
-          <div className="mt-20 rounded-xl border border-solid border-gray-200 p-4">
+          <div className="mt-16 rounded-xl border border-solid border-gray-200 p-4">
             <div className="flex items-center gap-2 font-semibold text-slate-600">
               <IconWork />
               <span>Work experience</span>
