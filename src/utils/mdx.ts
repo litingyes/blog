@@ -4,6 +4,14 @@ import { cwd } from 'node:process'
 import remarkFrontmatter from 'remark-frontmatter'
 import remarkMdxFrontmatter from 'remark-mdx-frontmatter'
 import remarkGfm from 'remark-gfm'
+import stringWidth from 'string-width'
+import remarkExtendedTable from 'remark-extended-table'
+import remarkToc from 'remark-toc'
+import remarkEmoji from 'remark-emoji'
+import remarkA11yEmoji from '@fec/remark-a11y-emoji'
+import remarkBreaks from 'remark-breaks'
+import remarkDirective from 'remark-directive'
+import remarkRemoveUrlTrailingSlash from 'remark-remove-url-trailing-slash'
 import rehypeShiki from '@shikijs/rehype'
 import {
   transformerMetaHighlight,
@@ -16,6 +24,8 @@ import {
   transformerRenderWhitespace,
 } from '@shikijs/transformers'
 import { compileMDX } from 'next-mdx-remote/rsc'
+import rehypeExternalLinks from 'rehype-external-links'
+import rehypeSlug from 'rehype-slug'
 import { rehypePrune } from '@/plugins/rehypePrune.mjs'
 import { mdxComponents } from '@/components/mdx'
 import { transformDateStringToTimestamp } from '@/utils/date'
@@ -39,7 +49,21 @@ export async function getMdxData(path: string) {
       options: {
         parseFrontmatter: true,
         mdxOptions: {
-          remarkPlugins: [remarkFrontmatter, remarkMdxFrontmatter, remarkGfm],
+          remarkPlugins: [
+            remarkFrontmatter,
+            remarkMdxFrontmatter,
+            remarkGfm,
+            [remarkGfm, {
+              stringWidth,
+            }],
+            remarkExtendedTable,
+            remarkToc,
+            remarkEmoji,
+            remarkA11yEmoji,
+            remarkBreaks,
+            remarkDirective,
+            remarkRemoveUrlTrailingSlash,
+          ],
           rehypePlugins: [
             [
               rehypeShiki,
@@ -60,6 +84,11 @@ export async function getMdxData(path: string) {
                 ],
               },
             ],
+            [rehypeExternalLinks, {
+              rel: [''],
+              target: '_blank',
+            }],
+            rehypeSlug,
             rehypePrune,
           ],
           format: 'mdx',
