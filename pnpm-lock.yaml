@@ -132,6 +132,9 @@ importers:
       remark-extended-table:
         specifier: ^2.0.2
         version: 2.0.2(mdast-util-gfm-table@2.0.0)(micromark-extension-gfm-table@2.1.0)(micromark@4.0.0)(remark-gfm@4.0.0)(remark-parse@11.0.0)(unified@11.0.5)
+      remark-flexible-containers:
+        specifier: ^1.2.1
+        version: 1.2.1
       remark-frontmatter:
         specifier: ^5.0.0
         version: 5.0.0
@@ -3769,6 +3772,9 @@ packages:
       remark-parse: ^11.0.0
       unified: ^11.0.0
 
+  remark-flexible-containers@1.2.1:
+    resolution: {integrity: sha512-6qsWW2A3577AyYWDKtiKb79+KISiReB7Tos/aJg8uu9dwGPt14KRZrrJB32zY9/VYIetW15SZiqN3v7W2UP8rA==}
+
   remark-frontmatter@5.0.0:
     resolution: {integrity: sha512-XTFYvNASMe5iPN0719nPrdItC9aU0ssC4v14mH1BCi1u0n1gAocqcujWUrByftZTbLhRtiKRyjYTSIOcr69UVQ==}
 
@@ -4174,6 +4180,12 @@ packages:
 
   unist-builder@4.0.0:
     resolution: {integrity: sha512-wmRFnH+BLpZnTKpc5L7O67Kac89s9HMrtELpnNaE6TAobq5DTZZs5YaTQfAZBA9bFPECx2uVAPO31c+GVug8mg==}
+
+  unist-util-find-after@5.0.0:
+    resolution: {integrity: sha512-amQa0Ep2m6hE2g72AugUItjbuM8X8cGQnFoHk0pGfrFeT9GZhzN5SW8nRsiGKK7Aif4CrACPENkA6P/Lw6fHGQ==}
+
+  unist-util-find-between-all@1.0.5:
+    resolution: {integrity: sha512-zqpIPPzhbG6fI5lqYZhS1UPsMvxV9IY6dwbizLHLPAGNb3pQT3mTvmzXpP1K2lmUh4bhUwAN4gkQcxhR/OLS4g==}
 
   unist-util-inspect@8.1.0:
     resolution: {integrity: sha512-mOlg8Mp33pR0eeFpo5d2902ojqFFOKMMG2hF8bmH7ZlhnmjFgh0NI3/ZDwdaBJNbvrS7LZFVrBVtIE9KZ9s7vQ==}
@@ -9458,6 +9470,14 @@ snapshots:
       - micromark-extension-gfm-table
       - supports-color
 
+  remark-flexible-containers@1.2.1:
+    dependencies:
+      '@types/mdast': 4.0.4
+      unist-builder: 4.0.0
+      unist-util-find-after: 5.0.0
+      unist-util-find-between-all: 1.0.5
+      unist-util-visit: 5.0.0
+
   remark-frontmatter@5.0.0:
     dependencies:
       '@types/mdast': 4.0.4
@@ -9919,6 +9939,16 @@ snapshots:
   unist-builder@4.0.0:
     dependencies:
       '@types/unist': 3.0.2
+
+  unist-util-find-after@5.0.0:
+    dependencies:
+      '@types/unist': 3.0.2
+      unist-util-is: 6.0.0
+
+  unist-util-find-between-all@1.0.5:
+    dependencies:
+      '@types/unist': 3.0.2
+      unist-util-is: 6.0.0
 
   unist-util-inspect@8.1.0:
     dependencies:

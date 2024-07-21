@@ -15,4 +15,40 @@
       }
     }
   }
+
+  .post-banner {
+    @apply rounded-lg px-3 py-2 my-4;
+
+    &[data-type='info'] {
+      @apply bg-gray-100;
+    }
+
+    &[data-type='tip'] {
+      @apply bg-blue-100;
+    }
+
+    &[data-type='warning'] {
+      @apply bg-yellow-100;
+    }
+
+    &[data-type='danger'] {
+      @apply bg-red-100;
+    }
+
+    &[data-type='details'] {
+      @apply bg-gray-100;
+    }
+
+    &__title {
+      @apply font-semibold;
+    }
+
+    & > * {
+      @apply my-2;
+    }
+
+    & > *:last-child {
+      @apply mb-0;
+    }
+  }
 }

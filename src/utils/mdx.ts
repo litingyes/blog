@@ -12,6 +12,7 @@ import remarkA11yEmoji from '@fec/remark-a11y-emoji'
 import remarkBreaks from 'remark-breaks'
 import remarkDirective from 'remark-directive'
 import remarkRemoveUrlTrailingSlash from 'remark-remove-url-trailing-slash'
+import remarkFlexibleContainers from 'remark-flexible-containers'
 import rehypeShiki from '@shikijs/rehype'
 import {
   transformerMetaHighlight,
@@ -52,11 +53,26 @@ export async function getMdxData(path: string) {
           remarkPlugins: [
             remarkFrontmatter,
             remarkMdxFrontmatter,
-            remarkGfm,
             [remarkGfm, {
               stringWidth,
+              tableCellPadding: false,
             }],
             remarkExtendedTable,
+            [
+              remarkFlexibleContainers,
+              {
+                containerTagName: (type: string) => type === 'details' ? 'details' : 'section',
+                containerClassName: 'post-banner',
+                containerProperties: (type: string) => ({
+                  'data-type': type,
+                }),
+                title: (type: string, title: string) => title?.trim() ? title : type.toLocaleUpperCase(),
+                titleTagName: (type: string) => {
+                  return type === 'details' ? 'summary' : 'div'
+                },
+                titleClassName: 'post-banner__title',
+              },
+            ],
             remarkToc,
             remarkEmoji,
             remarkA11yEmoji,
