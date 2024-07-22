@@ -22,7 +22,6 @@ import {
   transformerNotationFocus,
   transformerNotationHighlight,
   transformerNotationWordHighlight,
-  transformerRenderWhitespace,
 } from '@shikijs/transformers'
 import { compileMDX } from 'next-mdx-remote/rsc'
 import rehypeExternalLinks from 'rehype-external-links'
@@ -96,7 +95,6 @@ export async function getMdxData(path: string) {
                   transformerNotationFocus(),
                   transformerNotationHighlight(),
                   transformerNotationWordHighlight(),
-                  transformerRenderWhitespace(),
                 ],
               },
             ],

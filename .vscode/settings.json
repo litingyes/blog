@@ -1,7 +1,7 @@
 {
   // Enable the ESlint flat config support
   // (remove this if your ESLint extension above v3.0.5)
-  "eslint.experimental.useFlatConfig": true,
+  "eslint.useFlatConfig": true,
 
   // Disable the default formatter, use eslint instead
   "prettier.enable": false,
@@ -36,6 +36,7 @@
     "vue",
     "html",
     "markdown",
+    "mdx",
     "json",
     "jsonc",
     "yaml",
@@ -57,11 +58,13 @@
   },
 
   "cSpell.words": [
+    "isize",
     "nextui",
     "rehype",
     "Shiki",
     "shikijs",
     "unocss",
+    "usize",
     "vitesse"
   ]
 }

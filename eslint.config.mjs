@@ -21,12 +21,6 @@ export default antfu(
   },
   // {
   //   ...mdx.flat,
-  //   processor: mdx.createRemarkProcessor({
-  //     lintCodeBlocks: true,
-  //   }),
-  // },
-  // {
-  //   ...mdx.flatCodeBlocks,
   // },
   ...compat.config(
     {
