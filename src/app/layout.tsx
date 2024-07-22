@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Providers>
           <LayoutHeader />
-          <main className="px-32 pt-20">
+          <main className="h-screen overflow-auto px-32 pb-12 pt-20">
             {children}
           </main>
         </Providers>
