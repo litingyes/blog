@@ -6,7 +6,8 @@ const colors = require('tailwindcss/colors')
 
 const config: Config = {
   content: [
-    './src/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.tsx',
+    './src/components/**/*.tsx',
     './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
@@ -15,7 +16,17 @@ const config: Config = {
         DEFAULT: {
           css: [
             {
-              '--tw-prose-code': 'red',
+              'a': {
+                'color': colors.blue[400],
+                'text-decoration-line': 'underline',
+                'text-decoration-color': 'currentColor',
+                'text-decoration-style': 'solid',
+                'text-decoration-thickness': '1px',
+                'text-underline-offset': '4px',
+              },
+              'img': {
+                margin: 0,
+              },
               'code': {
                 padding: '4px 8px',
                 backgroundColor: colors.gray[200],
@@ -28,16 +39,16 @@ const config: Config = {
                 content: 'none',
               },
               'thead th': {
-                backgroundColor: colors.gray[200],
+                backgroundColor: 'var(--tw-prose-th)',
                 padding: '8px',
               },
               'tbody tr': {
                 'transition': 'backgroundColor 0.3s',
                 '&:nth-child(2n)': {
-                  backgroundColor: colors.gray[50],
+                  backgroundColor: 'var(--tw-prose-tr)',
                 },
                 '&:hover': {
-                  backgroundColor: colors.gray[100],
+                  backgroundColor: 'var(--tw-prose-tr-hover)',
                 },
               },
             },
@@ -46,13 +57,35 @@ const config: Config = {
         slate: {
           css: {
             '--tw-prose-code': colors.slate[600],
+            '--tw-prose-invert-body': colors.slate[100],
+            '--tw-prose-th': colors.gray[200],
+            '--tw-prose-invert-th': colors.gray[800],
+            '--tw-prose-tr': colors.gray[50],
+            '--tw-prose-invert-tr': colors.gray[900],
+            '--tw-prose-tr-hover': colors.gray[100],
+            '--tw-prose-invert-tr-hover': colors.gray[700],
+          },
+        },
+        invert: {
+          css: {
+            '--tw-prose-th': 'var(--tw-prose-invert-th)',
+            '--tw-prose-tr': 'var(--tw-prose-invert-tr)',
+            '--tw-prose-tr-hover': 'var(--tw-prose-invert-tr-hover)',
           },
         },
       },
     },
   },
   plugins: [
-    nextui(),
+    nextui({
+      themes: {
+        dark: {
+          colors: {
+            background: '#030712',
+          },
+        },
+      },
+    }),
     require('@tailwindcss/typography'),
   ],
   darkMode: 'class',

@@ -35,7 +35,7 @@ export default async function Post({ params }: { params: {
 
   return (
     <section className="post-layout flex justify-center">
-      <article className="prose prose-slate w-full max-w-4xl px-6  dark:prose-invert prose-a:text-blue-400 prose-a:underline prose-a:decoration-current prose-a:decoration-solid prose-a:decoration-1 prose-a:underline-offset-4 prose-img:m-0">
+      <article className="prose prose-slate w-full max-w-4xl px-6 dark:prose-invert">
         {post.content}
       </article>
     </section>

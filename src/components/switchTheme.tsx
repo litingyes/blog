@@ -5,7 +5,7 @@ import { VisuallyHidden, useSwitch } from '@nextui-org/react'
 import { useTheme } from 'next-themes'
 import { MoonIcon, SunIcon } from '@/components/icons/theme'
 
-export default function SwitchTheme() {
+export function SwitchTheme() {
   const [mounted, setMounted] = useState(false)
   const { resolvedTheme, setTheme } = useTheme()
   const {

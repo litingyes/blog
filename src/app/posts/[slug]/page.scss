@@ -52,3 +52,41 @@
     }
   }
 }
+
+.dark .post-layout {
+  code {
+    @apply bg-gray-700;
+  }
+
+  pre code {
+    @apply bg-transparent;
+  }
+
+  .post-banner {
+    &[data-type='info'] {
+      @apply bg-gray-400;
+    }
+
+    &[data-type='tip'] {
+      @apply bg-blue-400;
+    }
+
+    &[data-type='warning'] {
+      @apply bg-yellow-400;
+    }
+
+    &[data-type='danger'] {
+      @apply bg-red-400;
+    }
+
+    &[data-type='details'] {
+      @apply bg-gray-400;
+    }
+  }
+}
+
+.dark .shiki,
+.dark .shiki span {
+  color: var(--shiki-dark) !important;
+  background-color: var(--shiki-dark-bg) !important;
+}
