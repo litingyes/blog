@@ -27,6 +27,9 @@ const config: Config = {
               'img': {
                 margin: 0,
               },
+              'pre': {
+                position: 'relative',
+              },
               'code': {
                 padding: '4px 8px',
                 backgroundColor: colors.gray[200],
@@ -79,9 +82,14 @@ const config: Config = {
   plugins: [
     nextui({
       themes: {
+        light: {
+          colors: {
+            background: colors.gray[100],
+          },
+        },
         dark: {
           colors: {
-            background: '#030712',
+            background: colors.gray[950],
           },
         },
       },
