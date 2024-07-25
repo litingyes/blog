@@ -18,6 +18,17 @@ export default antfu(
       html: true,
       markdown: true,
     },
+    rules: {
+      'unused-imports/no-unused-vars': [
+        'warn',
+        {
+          vars: 'all',
+          varsIgnorePattern: '^_',
+          args: 'after-used',
+          argsIgnorePattern: '^_',
+        },
+      ],
+    },
   },
   // {
   //   ...mdx.flat,

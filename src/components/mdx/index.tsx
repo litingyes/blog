@@ -2,6 +2,7 @@ import type { MDXRemoteProps } from 'next-mdx-remote/rsc'
 import { MdxH1, MdxH2, MdxH3, MdxH4, MdxH5, MdxH6 } from './heading'
 import { MdxA } from './a'
 import { MdxPre } from './pre'
+import { MdxCode } from './code'
 import { MdxImg } from './img'
 
 export const mdxComponents: MDXRemoteProps['components'] = {
@@ -13,5 +14,6 @@ export const mdxComponents: MDXRemoteProps['components'] = {
   h6: MdxH6,
   a: MdxA,
   pre: MdxPre,
+  code: MdxCode,
   img: MdxImg,
 }

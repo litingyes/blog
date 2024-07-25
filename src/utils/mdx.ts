@@ -15,6 +15,7 @@ import remarkRemoveUrlTrailingSlash from 'remark-remove-url-trailing-slash'
 import remarkFlexibleContainers from 'remark-flexible-containers'
 import rehypeShiki from '@shikijs/rehype'
 import {
+  transformerCompactLineOptions,
   transformerMetaHighlight,
   transformerMetaWordHighlight,
   transformerNotationDiff,
@@ -44,7 +45,7 @@ export async function getMdxData(path: string) {
 
   return {
     slug: basename(filePath, '.mdx'),
-    ...await compileMDX({
+    ...(await compileMDX({
       source: mdxContent,
       options: {
         parseFrontmatter: true,
@@ -52,20 +53,25 @@ export async function getMdxData(path: string) {
           remarkPlugins: [
             remarkFrontmatter,
             remarkMdxFrontmatter,
-            [remarkGfm, {
-              stringWidth,
-              tableCellPadding: false,
-            }],
+            [
+              remarkGfm,
+              {
+                stringWidth,
+                tableCellPadding: false,
+              },
+            ],
             remarkExtendedTable,
             [
               remarkFlexibleContainers,
               {
-                containerTagName: (type: string) => type === 'details' ? 'details' : 'section',
+                containerTagName: (type: string) =>
+                  type === 'details' ? 'details' : 'section',
                 containerClassName: 'post-banner',
                 containerProperties: (type: string) => ({
                   'data-type': type,
                 }),
-                title: (type: string, title: string) => title?.trim() ? title : type.toLocaleUpperCase(),
+                title: (type: string, title: string) =>
+                  title?.trim() ? title : type.toLocaleUpperCase(),
                 titleTagName: (type: string) => {
                   return type === 'details' ? 'summary' : 'div'
                 },
@@ -95,13 +101,18 @@ export async function getMdxData(path: string) {
                   transformerNotationFocus(),
                   transformerNotationHighlight(),
                   transformerNotationWordHighlight(),
+                  transformerCompactLineOptions(),
                 ],
+                addLanguageClass: true,
               },
             ],
-            [rehypeExternalLinks, {
-              rel: [''],
-              target: '_blank',
-            }],
+            [
+              rehypeExternalLinks,
+              {
+                rel: [''],
+                target: '_blank',
+              },
+            ],
             rehypeSlug,
             rehypePrune,
           ],
@@ -109,10 +120,17 @@ export async function getMdxData(path: string) {
         },
       },
       components: mdxComponents,
-    }),
+    })),
   }
 }
 
 export async function getAllMdxData() {
-  return (await Promise.all(getMdxPaths().map(path => getMdxData(path as string)))).sort((a, b) => transformDateStringToTimestamp(a.frontmatter.lastUpdatedTime as string) > transformDateStringToTimestamp(b.frontmatter.lastUpdatedTime as string) ? -1 : 1)
+  return (
+    await Promise.all(getMdxPaths().map(path => getMdxData(path as string)))
+  ).sort((a, b) =>
+    transformDateStringToTimestamp(a.frontmatter.lastUpdatedTime as string)
+    > transformDateStringToTimestamp(b.frontmatter.lastUpdatedTime as string)
+      ? -1
+      : 1,
+  )
 }
