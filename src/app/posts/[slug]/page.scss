@@ -1,4 +1,10 @@
 .post-layout {
+  article {
+    & > *:first-child {
+      margin-top: 0 !important;
+    }
+  }
+
   &__heading-a {
     opacity: 0;
   }

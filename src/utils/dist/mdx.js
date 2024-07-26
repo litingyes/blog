@@ -68,6 +68,7 @@ var transformers_1 = require("@shikijs/transformers");
 var rsc_1 = require("next-mdx-remote/rsc");
 var rehype_external_links_1 = require("rehype-external-links");
 var rehype_slug_1 = require("rehype-slug");
+var reading_time_1 = require("reading-time");
 var rehypePrune_mjs_1 = require("@/plugins/rehypePrune.mjs");
 var mdx_1 = require("@/components/mdx");
 var date_1 = require("@/utils/date");
@@ -165,7 +166,7 @@ function getMdxData(path) {
                             },
                             components: mdx_1.mdxComponents
                         })];
-                case 1: return [2 /*return*/, __assign.apply(void 0, _a.concat([(_b.sent())]))];
+                case 1: return [2 /*return*/, __assign.apply(void 0, [__assign.apply(void 0, _a.concat([(_b.sent())])), { stats: reading_time_1["default"](mdxContent) }])];
             }
         });
     });

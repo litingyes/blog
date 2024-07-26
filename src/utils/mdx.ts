@@ -27,6 +27,7 @@ import {
 import { compileMDX } from 'next-mdx-remote/rsc'
 import rehypeExternalLinks from 'rehype-external-links'
 import rehypeSlug from 'rehype-slug'
+import readingTime from 'reading-time'
 import { rehypePrune } from '@/plugins/rehypePrune.mjs'
 import { mdxComponents } from '@/components/mdx'
 import { transformDateStringToTimestamp } from '@/utils/date'
@@ -121,6 +122,7 @@ export async function getMdxData(path: string) {
       },
       components: mdxComponents,
     })),
+    stats: readingTime(mdxContent),
   }
 }
 
