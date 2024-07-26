@@ -2,7 +2,9 @@
   "cSpell.words": [
     "ahooks",
     "rehype",
-    "shiki"
+    "shiki",
+    "shikijs",
+    "unocss"
   ],
   "compile-hero.disable-compile-files-on-did-save-code": false
 }

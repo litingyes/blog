@@ -95,6 +95,21 @@ const config: Config = {
       },
     }),
     require('@tailwindcss/typography'),
+    require('@gradin/tailwindcss-scrollbar')({
+      size: '8px',
+      track: {
+        background: colors.gray[200],
+        darkBackground: colors.gray[900],
+      },
+      thumb: {
+        background: colors.gray[400],
+        darkBackground: colors.gray[600],
+        borderRadius: '8px',
+      },
+      hover: {
+        background: colors.gray[500],
+      },
+    }),
   ],
   darkMode: 'class',
 }

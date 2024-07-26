@@ -51,6 +51,9 @@ importers:
       '@fec/remark-a11y-emoji':
         specifier: ^4.0.2
         version: 4.0.2
+      '@gradin/tailwindcss-scrollbar':
+        specifier: ^3.0.1
+        version: 3.0.1(tailwindcss@3.4.6)
       '@next/eslint-plugin-next':
         specifier: ^14.2.5
         version: 14.2.5
@@ -372,6 +375,11 @@ packages:
 
   '@formatjs/intl-localematcher@0.5.4':
     resolution: {integrity: sha512-zTwEpWOzZ2CiKcB93BLngUX59hQkuZjT2+SAQEscSm52peDW/getsawMcWF1rGRpMCX6D7nSJA3CzJ8gn13N/g==}
+
+  '@gradin/tailwindcss-scrollbar@3.0.1':
+    resolution: {integrity: sha512-diXlxbgX4JU/uUJsL54SWpL7Ek3FdZmL/QyBBk6wSSVcd4zQL8Jk6CgpPyY7qy1jymAS6E/P+YY1rs6coiSWAA==}
+    peerDependencies:
+      tailwindcss: '>=2.0.0'
 
   '@humanwhocodes/module-importer@1.0.1':
     resolution: {integrity: sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==}
@@ -4712,6 +4720,10 @@ snapshots:
   '@formatjs/intl-localematcher@0.5.4':
     dependencies:
       tslib: 2.6.3
+
+  '@gradin/tailwindcss-scrollbar@3.0.1(tailwindcss@3.4.6)':
+    dependencies:
+      tailwindcss: 3.4.6
 
   '@humanwhocodes/module-importer@1.0.1': {}
 
