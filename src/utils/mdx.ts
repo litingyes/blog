@@ -13,6 +13,8 @@ import remarkBreaks from 'remark-breaks'
 import remarkDirective from 'remark-directive'
 import remarkRemoveUrlTrailingSlash from 'remark-remove-url-trailing-slash'
 import remarkFlexibleContainers from 'remark-flexible-containers'
+import type { TocItem } from 'remark-flexible-toc'
+import remarkFlexibleToc from 'remark-flexible-toc'
 import rehypeShiki from '@shikijs/rehype'
 import {
   transformerCompactLineOptions,
@@ -43,6 +45,7 @@ export function getMdxPaths() {
 export async function getMdxData(path: string) {
   const filePath = join(blogsDir, path)
   const mdxContent = readFileSync(filePath, 'utf-8')
+  const toc: TocItem[] = []
 
   return {
     slug: basename(filePath, '.mdx'),
@@ -85,6 +88,9 @@ export async function getMdxData(path: string) {
             remarkBreaks,
             remarkDirective,
             remarkRemoveUrlTrailingSlash,
+            [remarkFlexibleToc, {
+              tocRef: toc,
+            }],
           ],
           rehypePlugins: [
             [
@@ -122,6 +128,7 @@ export async function getMdxData(path: string) {
       },
       components: mdxComponents,
     })),
+    toc,
     stats: readingTime(mdxContent),
   }
 }

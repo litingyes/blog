@@ -1,3 +1,5 @@
+import { formatDomId } from '@/utils/format'
+
 export async function copyToClipboard(text?: string) {
   if (!text) {
     return
@@ -16,4 +18,20 @@ export async function copyToClipboard(text?: string) {
     document.execCommand('copy')
     ta.remove()
   }
+}
+
+export function updateHash(hashID: string) {
+  document.getElementById(hashID)?.scrollIntoView({
+    behavior: 'smooth',
+  })
+
+  const hash = `#${formatDomId(hashID)}`
+
+  history.pushState({}, '', `${location.pathname}${hash}`)
+  window.dispatchEvent(
+    new HashChangeEvent('hashchange', {
+      oldURL: location.hash,
+      newURL: hash,
+    }),
+  )
 }

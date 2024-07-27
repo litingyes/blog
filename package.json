@@ -57,6 +57,7 @@
     "remark-emoji": "^5.0.1",
     "remark-extended-table": "^2.0.2",
     "remark-flexible-containers": "^1.2.1",
+    "remark-flexible-toc": "^1.1.1",
     "remark-frontmatter": "^5.0.0",
     "remark-gfm": "^4.0.0",
     "remark-mdx-frontmatter": "^5.0.0",
