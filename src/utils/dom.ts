@@ -28,7 +28,7 @@ export function updateHash(hashID: string) {
   const hash = `#${formatDomId(hashID)}`
 
   history.pushState({}, '', `${location.pathname}${hash}`)
-  window.dispatchEvent(
+  window?.dispatchEvent(
     new HashChangeEvent('hashchange', {
       oldURL: location.hash,
       newURL: hash,
