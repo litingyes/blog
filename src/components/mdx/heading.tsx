@@ -1,6 +1,7 @@
 'use client'
 
 import type { MDXComponents } from 'mdx/types'
+import type { MouseEvent } from 'react'
 import { formatDomId } from '@/utils/format'
 import { updateHash } from '@/utils/dom'
 
