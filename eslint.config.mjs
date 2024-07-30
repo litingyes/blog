@@ -28,6 +28,7 @@ export default antfu(
           argsIgnorePattern: '^_',
         },
       ],
+      'n/prefer-global/process': ['error', 'always'],
     },
   },
   // {
