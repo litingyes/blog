@@ -31,7 +31,7 @@ export default async function AboutPage() {
 
   return (
     <div className="px-8 pt-16">
-      <div className="grid grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
         <div>
           <div>
             <Avatar src="/avatar.jpeg" radius="lg" className="!size-36 text-large hover:animate-spin" name="litingyes" />
@@ -79,8 +79,8 @@ export default async function AboutPage() {
         <div>
           <ul className="flex flex-col gap-10 border-l-1 border-solid border-gray-500">
             {posts.map(post => (
-              <li className="flex" key={post.slug}>
-                <div className="w-56 pl-4">
+              <li className="flex flex-col pl-4 lg:flex-row" key={post.slug}>
+                <div className="mb-2 w-56">
                   <div className="flex items-center gap-1 text-slate-500">
                     <i className="text-xl">
                       <IconDateRange />
@@ -101,7 +101,6 @@ export default async function AboutPage() {
             ))}
           </ul>
         </div>
-
       </div>
     </div>
   )

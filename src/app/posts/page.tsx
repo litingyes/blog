@@ -11,8 +11,8 @@ export default async function PostPage() {
     <div className="mx-auto max-w-[800px] pt-10">
       <ul className="flex flex-col gap-10 border-l-1 border-solid border-gray-500">
         {posts.map(post => (
-          <li className="flex" key={post.slug}>
-            <div className="w-56 pl-4">
+          <li className="flex flex-col pl-4 lg:flex-row" key={post.slug}>
+            <div className="mb-2 w-56">
               <div className="flex items-center gap-1 text-slate-500">
                 <i className="text-xl">
                   <IconDateRange />
