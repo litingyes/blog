@@ -5,18 +5,12 @@ import Link from 'next/link'
 import type { MouseEvent } from 'react'
 import { formatDomId } from '@/utils/format'
 import { useHash } from '@/hooks/useHash'
-import { useMountedStatus } from '@/hooks/useMountedStatus'
 
 interface Props {
   toc: TocItem[]
 }
 
-export function PostToc({ toc }: Props) {
-  const isMounted = useMountedStatus()
-  if (!isMounted)
-    return null
-
-  // eslint-disable-next-line react-hooks/rules-of-hooks
+export default function PostToc({ toc }: Props) {
   const { hash, updateHash } = useHash()
 
   const onClickAnchor = (e: MouseEvent, id: string) => {

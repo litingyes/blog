@@ -1,9 +1,13 @@
+import dynamic from 'next/dynamic'
 import { getAllMdxData } from '@/utils/mdx'
 import './page.scss'
 import { IconWordCount } from '@/components/icons/wordCount'
 import { IconClockOutline } from '@/components/icons/clock'
 import { transformDateStringToDisplayDate } from '@/utils/date'
-import { PostToc } from '@/components/post/Toc'
+
+const DynamicPostToc = dynamic(() => import('@/components/post/Toc'), {
+  ssr: false,
+})
 
 export async function generateStaticParams() {
   const posts = await getAllMdxData()
@@ -64,7 +68,7 @@ export default async function Post({ params }: { params: {
         </article>
       </div>
       <div className="fixed right-9 w-60">
-        <PostToc toc={post.toc} />
+        <DynamicPostToc toc={post.toc} />
       </div>
     </section>
   )
