@@ -1,6 +1,5 @@
 {
   "name": "blog",
-  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev --port 6001",
@@ -70,9 +69,6 @@
     "typescript": "^5.5.4",
     "unified": "^11.0.5",
     "unist-util-visit-parents": "^6.0.1"
-  },
-  "overrides": {
-    "unist-util-visit-parents": "^6.0.0"
   },
   "lint-staged": {
     "*.{tsx,ts,jsx,js,html,css,md,json}": "eslint --fix"
